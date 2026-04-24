@@ -1,0 +1,13 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# OS junk
+.DS_Store
+
+# Optional: intermediate data
+data/extra/
