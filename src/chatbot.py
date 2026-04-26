@@ -1,93 +1,63 @@
+# src/chatbot.py
 import os
 from groq import Groq
-from retrieval1 import initialize, retrieve
+from retrieval import retrieve, format_context
+from prompts import ACTIVE_PROMPT
 
-SYSTEM_PROMPT = """You are DukeEats, a friendly dining assistant for Duke University students.
-You help students find meals at Duke dining halls based on their cravings, dietary needs, meal time, and location on campus.
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+MODEL  = "llama-3.3-70b-versatile"
 
-Only recommend dishes that appear in the CONTEXT provided to you. Never invent menu items.
-If no good match exists in the context, say so honestly.
+def chat(user_message: str, history: list[dict]) -> tuple[str, list[dict]]:
+    """
+    Send a message and get a response.
 
-For each recommendation always include:
-- Dish name
-- Dining hall name and which campus it's on
-- Why it matches what the student asked for
+    Args:
+        user_message: what the student typed
+        history:      list of previous {"role": ..., "content": ...} messages
 
-Be warm, specific, and concise."""
+    Returns:
+        (assistant_reply, updated_history)
+    """
+    # 1. Retrieve relevant menu items based on the user's message
+    results = retrieve(user_message, top_k=5)
+    context = format_context(results)
 
+    # 2. Build the system prompt with retrieved context injected
+    system_prompt = ACTIVE_PROMPT.format(context=context)
 
-def get_client():
-    api_key = os.getenv('GROQ_API_KEY')
-    if not api_key:
-        # try colab secrets
-        try:
-            from google.colab import userdata
-            api_key = userdata.get('GROQ_API_KEY')
-        except:
-            pass
-    if not api_key:
-        raise ValueError("GROQ_API_KEY not found. Set it in .env or Colab Secrets.")
-    return Groq(api_key=api_key)
-
-
-def chat(user_message, history, client):
-    # retrieve relevant menu items
-    results, scores = retrieve(user_message, top_k=3)
-    context = '\n'.join([f'- {doc}' for doc in results])
-
-    # augment user message with retrieved context
-    augmented = f"""Student question: {user_message}
-
-CONTEXT (relevant menu items):
-{context}
-
-Please recommend from the context above."""
-
-    history.append({"role": "user", "content": augmented})
-
-    response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[{"role": "system", "content": SYSTEM_PROMPT}] + history,
-        max_tokens=1024,
-        temperature=0.7
+    # 3. Assemble full message list: system + history + new user message
+    messages = (
+        [{"role": "system", "content": system_prompt}]
+        + history
+        + [{"role": "user", "content": user_message}]
     )
 
+    # 4. Call Groq
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=messages,
+        temperature=0.7,
+        max_tokens=500,
+    )
     reply = response.choices[0].message.content
-    history.append({"role": "assistant", "content": reply})
+
+    # 5. Append both turns to history and return
+    history = history + [
+        {"role": "user",      "content": user_message},
+        {"role": "assistant", "content": reply},
+    ]
     return reply, history
 
 
-def run_chatbot(embeddings_path):
-    initialize(embeddings_path)
-    client = get_client()
+# Quick test when run directly
+if __name__ == "__main__":
     history = []
-
-    print("DukeEats: Hi! I'm DukeEats. What are you hungry for today?")
-
-    while True:
-        user_input = input("You: ").strip()
-        if user_input.lower() in ['quit', 'exit', 'bye']:
-            print("DukeEats: Enjoy your meal!")
-            break
-        if not user_input:
-            continue
-
-        reply, history = chat(user_input, history, client)
-        print(f"DukeEats: {reply}\n")
-
-
-if __name__ == '__main__':
-    import sys
-    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-    # load .env for local development
-    try:
-        from dotenv import load_dotenv
-        load_dotenv()
-    except:
-        pass
-
-    base = os.path.dirname(os.path.abspath(__file__))
-    embeddings_path = os.path.join(base, '..', 'data', 'embeddings.pkl')
-
-    run_chatbot(embeddings_path)
+    test_turns = [
+        "I'm really hungry and want something comforting",
+        "Actually I'm vegetarian, any options?",
+        "What time does that place close?",
+    ]
+    for msg in test_turns:
+        print(f"\nUser: {msg}")
+        reply, history = chat(msg, history)
+        print(f"Duke Bites: {reply}")
