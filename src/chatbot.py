@@ -68,7 +68,17 @@ def chat(user_message: str, history: list[dict],
         (reply, updated_history)
     """
 
-    results = retrieve(user_message, top_k=5) # retrieve 5 most relevant items
+    context_query = user_message
+
+    if history:
+        prev_user_msgs = [
+            msg['content'] for msg in history 
+            if msg['role'] == 'user'
+        ]
+        context_query = ' '.join(prev_user_msgs[-2:] + [user_message])
+
+    results = retrieve(context_query, top_k=5)
+    # results = retrieve(user_message, top_k=5) # retrieve 5 most relevant items
     context = format_context(results) # Formats results in readable context
     system  = (prompt or ACTIVE_PROMPT).format(context=context) # Builds system prompt and inserts retrieved items
 
