@@ -1,5 +1,5 @@
 # scripts/run_chatbot.py
-# Simple CLI to chat with Duke Bites locally — no notebook needed
+# Terminal Interface for chatbot
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 

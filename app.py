@@ -1,9 +1,12 @@
+# app.py
+# Front end interface for chatbot (UI)
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from chatbot import chat
 import gradio as gr
 
+# Used when user sends a message
 def respond(user_message, history):
     reply, _ = chat(user_message, history)
     return reply

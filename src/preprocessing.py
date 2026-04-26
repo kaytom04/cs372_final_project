@@ -1,8 +1,9 @@
 # src/preprocessing.py
+# cleans menu/location data, merges datasets, create text representation used for item and chunk retrieval
 import re
 import pandas as pd
 
-
+# Standardizes text for embeddings and retrieval
 def clean_text(text: str) -> str:
     """Lowercase, strip whitespace, remove special characters."""
     if not isinstance(text, str):
@@ -12,14 +13,14 @@ def clean_text(text: str) -> str:
     text = re.sub(r'[^\w\s,./\'-]', '', text)
     return text
 
-
+# Return clean list of tags
 def normalize_tags(tags: str) -> list:
     """Split comma-separated tags into a clean list."""
     if not isinstance(tags, str):
         return []
     return [t.strip().lower() for t in tags.split(',') if t.strip()]
 
-
+# Loads datasets and adds cleaned columns
 def load_and_clean(menu_path: str, loc_path: str) -> tuple:
     """Load and clean both CSVs. Returns (menu_df, loc_df)."""
     menu_df = pd.read_csv(menu_path)
@@ -36,7 +37,7 @@ def load_and_clean(menu_path: str, loc_path: str) -> tuple:
 
     return menu_df, loc_df
 
-
+# Merges food items with dining location information
 def merge_data(menu_df: pd.DataFrame, loc_df: pd.DataFrame) -> pd.DataFrame:
     """Merge menu items with location info."""
     return menu_df.merge(
@@ -46,7 +47,7 @@ def merge_data(menu_df: pd.DataFrame, loc_df: pd.DataFrame) -> pd.DataFrame:
         suffixes=('_item', '_location')
     )
 
-
+# Builds text blob that is to be embedded - provides more semantic info
 def build_item_combo(row) -> str:
     """Rich text blob for a single menu item. What gets embedded."""
     item_tags = ' '.join(row['tags_list_item'])
@@ -59,12 +60,9 @@ def build_item_combo(row) -> str:
         f"Hours: {row['hours']}."
     )
 
-
+# builds chunks based on location and meal period
 def build_chunks(merged_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Build chunk-level data by grouping items per location + meal period.
-    This is the custom chunking strategy — toppings stay with their parent dish.
-    """
+    """Build chunk-level data by grouping items per location + meal period."""
     chunks = []
     for (loc_id, meal), group in merged_df.groupby(['location_id', 'meal_period']):
         loc_name = group.iloc[0]['name_location']

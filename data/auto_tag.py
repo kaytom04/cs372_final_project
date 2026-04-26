@@ -1,3 +1,5 @@
+# data/auto_tag.py
+# Script to automate tagging of each food item based on specific set of tags. Uses llama-3.3-70b-versatile
 import os, time, pandas as pd
 from groq import Groq
 from tqdm import tqdm
@@ -37,4 +39,5 @@ df["generated_tags"] = df.progress_apply(
     lambda row: get_tags(row["name"], row.get("description", "")), axis=1
 )
 
+# Output to new CSV file
 df.to_csv("menu_items_retagged.csv", index=False)
