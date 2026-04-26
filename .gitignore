@@ -2,7 +2,7 @@
 venv/
 __pycache__/
 *.pyc
-
+venv310/
 # Environment variables
 .env
 
