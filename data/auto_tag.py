@@ -1,75 +1,37 @@
-import pandas as pd
-from openai import OpenAI
-from tqdm import tqdm
-import time
-
-# 🔑 Set your API key
+import os, time, pandas as pd
 from groq import Groq
+from tqdm import tqdm
+
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-# 📂 Load your dataset
-df = pd.read_csv("/Users/kaylatom/Desktop/DUKE STUFF/CS 372/cs372_final_project/data/menu_items_augmented_commas.csv")
+df = pd.read_csv("/Users/kaylatom/Desktop/DUKE STUFF/CS 372/cs372_final_project/data/extra/menu_items_augmented_commas.csv").drop(columns=["tags"])
+df["description"] = df["description"].fillna(df["name"])
 
-# 🏷️ Define your tag set
-TAG_LIST = [
-    "vegetarian", "vegan", "dairy", "gluten",
-    "high_protein", "healthy", "fried", "comfort_food",
-    "breakfast", "lunch", "dinner", "dessert", "snack",
-    "spicy", "quick", "drink", "caffeinated"
-]
+TAG_STRING = "vegetarian, vegan, dairy, gluten_free, high_protein, healthy, fried, comfort, breakfast, lunch, dinner, dessert, snack, spicy, quick, drink, caffeinated, chicken, beef, pork, seafood, fish, egg, tofu, bowl, sandwich, salad, soup, pizza, pasta, sushi, burger, taco, baked, sweet, savory, light, rich, fresh, hot, cold, smoothie, juice, alcoholic, late_night, filling"
 
-TAG_STRING = ", ".join(TAG_LIST)
-
-# 🧾 Prompt template
-def build_prompt(name, description):
-    return f"""
-Assign tags from this list ONLY:
-[{TAG_STRING}]
-
-Rules:
-- Only use tags from the list
-- Output format: tag1,tag2,tag3
-- No spaces
-- No explanations
-
-Item:
-Name: {name}
-Description: {description}
-"""
-
-# 🤖 Call LLM
 def get_tags(name, description, retries=3):
-    prompt = build_prompt(name, description)
+    prompt = f"""Assign tags from this list ONLY: [{TAG_STRING}]
+Rules: only use tags from the list, output format: tag1,tag2,tag3, no spaces, no explanations
+Name: {name}
+Description: {description}"""
 
     for attempt in range(retries):
         try:
-            response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0
             )
-
-            tags = response.choices[0].message.content.strip().lower()
-
-            # Clean formatting
-            tags = tags.replace(" ", "")
-            return tags
-
+            return resp.choices[0].message.content.strip().lower().replace(" ", "")
         except Exception as e:
             print(f"Error: {e}, retrying...")
             time.sleep(2)
+    return ""
 
-    return ""  # fallback
-
-# 🚀 Apply tagging
 tqdm.pandas()
-
 df["generated_tags"] = df.progress_apply(
-    lambda row: get_tags(row["name"], row.get("description", "")),
-    axis=1
+    lambda row: get_tags(row["name"], row.get("description", "")), axis=1
 )
 
-# 💾 Save result
-df.to_csv("menu_items_tagged.csv", index=False)
-
-print("✅ Tagging complete. Saved to menu_items_tagged.csv")
+df.to_csv("menu_items_retagged.csv", index=False)
+print("Done. Saved to menu_items_retagged.csv")
