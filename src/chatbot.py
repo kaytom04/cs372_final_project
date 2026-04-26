@@ -3,8 +3,11 @@ import os
 from groq import Groq
 from retrieval import retrieve, format_context
 from prompts import ACTIVE_PROMPT
+from groq import Groq
+import os
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+# client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 MODEL  = "llama-3.3-70b-versatile"
 
 def chat(user_message: str, history: list[dict]) -> tuple[str, list[dict]]:
