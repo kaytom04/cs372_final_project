@@ -1,6 +1,6 @@
 import os
 from groq import Groq
-from retrieval import initialize, retrieve
+from retrieval1 import initialize, retrieve
 
 SYSTEM_PROMPT = """You are DukeEats, a friendly dining assistant for Duke University students.
 You help students find meals at Duke dining halls based on their cravings, dietary needs, meal time, and location on campus.
