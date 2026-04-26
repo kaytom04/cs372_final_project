@@ -2,13 +2,17 @@ import os, time, pandas as pd
 from groq import Groq
 from tqdm import tqdm
 
+# GROQ API KEY
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-df = pd.read_csv("/Users/kaylatom/Desktop/DUKE STUFF/CS 372/cs372_final_project/data/extra/menu_items_augmented_commas.csv").drop(columns=["tags"])
+# Read CSV
+df = pd.read_csv("menu_items_augmented_commas.csv").drop(columns=["tags"])
 df["description"] = df["description"].fillna(df["name"])
 
-TAG_STRING = "vegetarian, vegan, dairy, gluten_free, high_protein, healthy, fried, comfort, breakfast, lunch, dinner, dessert, snack, spicy, quick, drink, caffeinated, chicken, beef, pork, seafood, fish, egg, tofu, bowl, sandwich, salad, soup, pizza, pasta, sushi, burger, taco, baked, sweet, savory, light, rich, fresh, hot, cold, smoothie, juice, alcoholic, late_night, filling"
+# Custom set of tags to label each item in the list
+TAG_STRING = "vegetarian, vegan, dairy, gluten_free, high_protein, healthy, fried, comfort, breakfast, lunch, dinner, dessert, snack, spicy, quick, drink, caffeinated, chicken, beef, pork, seafood, fish, egg, tofu, bowl, sandwich, salad, soup, pizza, pasta, sushi, burger, taco, baked, sweet, savory, light, rich, fresh, hot, cold, smoothie, juice, late_night, filling"
 
+# Assign generated tags to each item and append to CSV
 def get_tags(name, description, retries=3):
     prompt = f"""Assign tags from this list ONLY: [{TAG_STRING}]
 Rules: only use tags from the list, output format: tag1,tag2,tag3, no spaces, no explanations
@@ -34,4 +38,3 @@ df["generated_tags"] = df.progress_apply(
 )
 
 df.to_csv("menu_items_retagged.csv", index=False)
-print("Done. Saved to menu_items_retagged.csv")
