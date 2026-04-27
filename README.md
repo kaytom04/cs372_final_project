@@ -64,6 +64,7 @@ In notebooks/evaluate.ipynb, multiple tests were run to evaluate the system:
 
 - Prompt Engineering Comparison
     - In order to understand the impact of prompt engineering, I tried 3 different prompts (friendly, concise, nutritionist). 
+
 **Query 1: "I want something spicy for dinner"**
 *(Specific craving — answer exists in knowledge base)*
 
@@ -92,9 +93,7 @@ In notebooks/evaluate.ipynb, multiple tests were run to evaluate the system:
 | V1 Friendly | [Late night cravings are the best. I've got just the thing for you. Head over to Gothic Grill, open until Midnight (or 1 am on Fridays and Saturdays), and grab some Mozzarella Sticks or Crispy Cauliflower - both are perfect for a satisfying late night snack. If you're in the mood for something a bit different, you could also swing by The Devil's Krafthouse, also open until Midnight, and try their Pretzels with beer cheese and mustard.] |
 | V2 Concise | [Mozzarella Sticks at Gothic Grill — A satisfying late-night snack to curb your cravings.
 Crispy Cauliflower at Gothic Grill — A crispy and savory option to fulfill your late-night hunger, available until Midnight (sun - thur) and 1 am (fri - sat).] |
-| V3 Nutritionist | [Late night cravings can be tough to resist. I've got just the things for you. Here are a few options that might hit the spot: 1. **Mozzarella Sticks** at Gothic Grill (open till Midnight on Sun - Thur, and 1 am on Fri - Sat) - A classic comfort food that's easy to devour in the wee hours. They're fried, cheesy, and sure to satisfy your late-night cravings. 2. **Crispy Cauliflower** at Gothic Grill (same hours as above) - Another tasty option that's also vegetarian-friendly. The crispy exterior and ranch dipping sauce make for a satisfying snack that's not too heavy. 3. **Pretzels with beer cheese and mustard** at The Devil's Krafthouse (open till Midnight, 7 days a week) - A savory, comforting snack that's perfect for a late night pick-me-up. The combination of soft pretzels, creamy beer cheese, and tangy mustard is a winner.
-
-All of these options are readily available during late night hours, so you can't go wrong with any of them. Enjoy your snack!] |
+| V3 Nutritionist | [Late night cravings can be tough to resist. I've got just the things for you. Here are a few options that might hit the spot: 1. **Mozzarella Sticks** at Gothic Grill (open till Midnight on Sun - Thur, and 1 am on Fri - Sat) - A classic comfort food that's easy to devour in the wee hours. They're fried, cheesy, and sure to satisfy your late-night cravings. 2. **Crispy Cauliflower** at Gothic Grill (same hours as above) - Another tasty option that's also vegetarian-friendly. The crispy exterior and ranch dipping sauce make for a satisfying snack that's not too heavy. 3. **Pretzels with beer cheese and mustard** at The Devil's Krafthouse (open till Midnight, 7 days a week) - A savory, comforting snack that's perfect for a late night pick-me-up. The combination of soft pretzels, creamy beer cheese, and tangy mustard is a winner.All of these options are readily available during late night hours, so you can't go wrong with any of them. Enjoy your snack!] |
 
 
     - ![alt text](/notebooks/data/promptquery.png)
