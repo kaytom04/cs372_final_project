@@ -72,8 +72,8 @@ def chat(user_message: str, history: list[dict],
 
     if history:
         prev_user_msgs = [
-            msg['content'] for msg in history 
-            if msg['role'] == 'user'
+            str(msg['content']) for msg in history 
+            if isinstance(msg, dict) and msg.get('role') == 'user'
         ]
         context_query = ' '.join(prev_user_msgs[-2:] + [user_message])
 
