@@ -1,4 +1,5 @@
 # scripts/run_chatbot.py
+# Most content in this file generated with AI, using Claude Sonnet 4.6
 # Terminal Interface for chatbot
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
