@@ -42,7 +42,7 @@ cs372_final_project/
 │   ├── embeddings.py
 │   ├── preprocessing.py
 │   └── retrieval.py
-├── src/
+├── videos/
 │   ├── Demo Video
 │   └── Technical Walkthrough.py
 ├── app.py
@@ -88,3 +88,10 @@ In notebooks/evaluate.ipynb, multiple tests were run to evaluate the system:
     - The two instances that scored the lowest was the query for east campus and the cheapest thing which makes sense as the model wasn't given information about east campus or prices
     - The gibberish query was decent as the model managed to suggest some food despite being prompted with nonsense.
 
+Overall, the system performs reliably for common food requests but has clear limitations around real-time data (hours, pricing) and location that would require additional data collection to address.
+
+## Design Decision
+- A major design decision that I made during this project was determining which LLM to use (Llama 3.1 8 B vs Llama 3.3 70B). This was primarily determing the tradeoff between model capability vs token limit and latency. 
+- During development, I used two different Llama models via Groq
+- Llama 3.1 8B Instant was used for the production chatbot (src/chatbot.py and app.py). This is because it is faster to use and uses fewer tokens pre request. This was good for instances in which I was still working through devlopment and testing the model. In addition, it had sufficient enough parameters given the context it was being used in (short conversations for food recs).
+- Llama 3.3 70B was used first in my auto_tag.py script which was used to add more labels to my dataset of food items so that my model would have more semantic information to work from, and performed better at autotagging than the other model. It was also used for evaluation in notebooks/evaluate.ipynb as for those instance I wanted the performance to not be limited by the quality of the model and wanted to use these tokens for more specific tasks like these. In an ideal scenario with no rate limits, 70B would be preferred for all tasks. The decision to split by task demonstrates a constraint of working within a free API tier.
