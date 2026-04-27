@@ -44,7 +44,7 @@ cs372_final_project/
 │   └── retrieval.py
 ├── videos/
 │   ├── Demo Video
-│   └── Technical Walkthrough.py
+│   └── Technical Walkthrough
 ├── app.py
 ├── requirements.txt
 ├── SETUP.md
