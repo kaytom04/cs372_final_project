@@ -13,6 +13,6 @@ LOCATIONS_CSV  = os.path.join(DATA_DIR, 'raw', 'WU_locations_Updated.csv')
 EMBEDDINGS_PKL = os.path.join(DATA_DIR, 'embeddings.pkl')
 
 EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
-# GROQ_MODEL      = 'llama-3.1-8b-instant'
-GROQ_MODEL        = 'llama-3.3-70b-versatile'
+GROQ_MODEL      = 'llama-3.1-8b-instant' # switch for training vs evaluation
+# GROQ_MODEL        = 'llama-3.3-70b-versatile'
 GROQ_API_KEY    = os.environ.get('GROQ_API_KEY')
