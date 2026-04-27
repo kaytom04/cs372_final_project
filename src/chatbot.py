@@ -1,4 +1,7 @@
 # src/chatbot.py
+
+# Most content in this file generated with AI, using Claude Sonnet 4.6
+
 # Takes user query then retrieves relevant information. Sends prompt and info to LLM. 
 from groq import Groq
 from retrieval import retrieve, format_context

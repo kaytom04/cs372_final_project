@@ -1,5 +1,8 @@
 # src/embeddings.py
 # Turn text data in to embeddings
+
+# Most content in this file generated with AI, using Claude Sonnet 4.6
+
 import pickle
 import numpy as np
 from sentence_transformers import SentenceTransformer

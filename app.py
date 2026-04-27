@@ -1,4 +1,7 @@
 # app.py
+
+# Most content in this file generated with AI, using Claude Sonnet 4.6
+
 # Front end interface for chatbot (UI)
 import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))

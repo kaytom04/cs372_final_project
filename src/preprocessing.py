@@ -3,6 +3,8 @@
 import re
 import pandas as pd
 
+# Most content in this file generated with AI, using Claude Sonnet 4.6
+
 # Standardizes text for embeddings and retrieval
 def clean_text(text: str) -> str:
     """Lowercase, strip whitespace, remove special characters."""

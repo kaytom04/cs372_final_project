@@ -1,5 +1,8 @@
 # data/auto_tag.py
 # Script to automate tagging of each food item based on specific set of tags. Uses llama-3.3-70b-versatile
+
+# Most content in this file generated with AI, using Claude Sonnet 4.6
+
 import os, time, pandas as pd
 from groq import Groq
 from tqdm import tqdm

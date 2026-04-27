@@ -1,5 +1,8 @@
 # src/retrieval.py
 # returns relevant results for the chatbot
+
+# Most content in this file generated with AI, using Claude Sonnet 4.6
+
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity

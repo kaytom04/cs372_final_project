@@ -1,5 +1,8 @@
 # src/config.py
 # Central config file
+
+# Most content in this file generated with AI, using Claude Sonnet 4.6
+
 import os
 from dotenv import load_dotenv
 

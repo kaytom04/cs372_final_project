@@ -9,7 +9,7 @@ The files that utilized AI generation are as follows:
 - Initial scaffolding for `src/preprocessing.py`, `src/embeddings.py`, `src/retrieval.py`, `src/chatbot.py`, and `src/config.py`
 - Initial versions of `notebooks/01_data_prep.ipynb` and `notebooks/evaluate.ipynb`
 - Initial `app.py` Gradio UI structure
-- `scripts/retag_menu.py` batch tagging logic
+- `data/auto_tag.py` batch tagging logic
 
 #### Modified and Reworked
 - **`retag_menu.py`** The original Claude-generated version used batch processing which caused repeated parse errors and had to be changed to row-by-row tagging.
