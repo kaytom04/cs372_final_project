@@ -20,5 +20,5 @@ Create a .env file in the root directory, then:
 ```GROQ_API_KEY=your_api_key_here```
 
 ### Running the APP
-Use ```python app.py``` to run the UI
+Use ```python app.py``` to run the UI.
 Open `http://localhost:7860` in your browser.
