@@ -53,7 +53,7 @@ cs372_final_project/
 ```
 
 ## Video Links
-- Demo video: [add link]
+- Demo video: [[add link](https://duke.zoom.us/rec/share/3Rf-mHArygewlHaC2zQMsAsyKAbbmzw3Qj-aBc2oS7bR4IPCXAKAzgmTCxyOpsSy.4JMD-SCGPxL00LPz?startTime=1777260078000)]
 - Technical walkthrough: [add link]
 
 ## Evaluation
@@ -94,7 +94,7 @@ In notebooks/evaluate.ipynb, multiple tests were run to evaluate the system:
 | V3 Nutritionist | [Late night cravings can be tough to resist. I've got just the things for you. Here are a few options that might hit the spot: 1. **Mozzarella Sticks** at Gothic Grill (open till Midnight on Sun - Thur, and 1 am on Fri - Sat) - A classic comfort food that's easy to devour in the wee hours. They're fried, cheesy, and sure to satisfy your late-night cravings. 2. **Crispy Cauliflower** at Gothic Grill (same hours as above) - Another tasty option that's also vegetarian-friendly. The crispy exterior and ranch dipping sauce make for a satisfying snack that's not too heavy. 3. **Pretzels with beer cheese and mustard** at The Devil's Krafthouse (open till Midnight, 7 days a week) - A savory, comforting snack that's perfect for a late night pick-me-up. The combination of soft pretzels, creamy beer cheese, and tangy mustard is a winner.All of these options are readily available during late night hours, so you can't go wrong with any of them. Enjoy your snack!] |
 
  When comparing the 3 different prompt variations, the Friendly prompt performed the best as it produced relevant information in a clear and helpful way. It provided specific recommendations along with explanations that could help an individual with determining what to eat. The concise prompt was good at providing relevant and helpful information, but I believe that some of its responses could be shortened even more to make them more concise. The nutritionist prompt was very clear in all its responses but for only 1 of the tests provided good information in terms of why its meal recommendations are nutritional/beneficial for a person. The other responses lacked good nutritional information which could also be a limitation due to the data that the model has access to. Overall, the friendly prompt had the best balance.
- 
+
 - Retrieval Quality Evaluation:
     - The model was evaluated based on 3 metrics: Average cosine similarity score, tag overlap (recall), and mean precision.
     - ![alt text](/notebooks/data/retrievalquality.png) 
