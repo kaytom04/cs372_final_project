@@ -53,8 +53,9 @@ cs372_final_project/
 ```
 
 ## Video Links
-- Demo video: [[add link](https://duke.zoom.us/rec/share/3Rf-mHArygewlHaC2zQMsAsyKAbbmzw3Qj-aBc2oS7bR4IPCXAKAzgmTCxyOpsSy.4JMD-SCGPxL00LPz?startTime=1777260078000)]
-- Technical walkthrough: [add link]
+- Demo Video: [add link]
+- Technical video: [[here](https://duke.zoom.us/rec/share/3Rf-mHArygewlHaC2zQMsAsyKAbbmzw3Qj-aBc2oS7bR4IPCXAKAzgmTCxyOpsSy.4JMD-SCGPxL00LPz?startTime=1777260078000)]
+
 
 ## Evaluation
 - Example of the UI for Duke bites in addition to an example prompt and response
