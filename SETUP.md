@@ -21,3 +21,4 @@ Create a .env file in the root directory, then:
 
 ### Running the APP
 Use ```python app.py``` to run the UI
+Open `http://localhost:7860` in your browser.
