@@ -53,7 +53,7 @@ cs372_final_project/
 ```
 
 ## Video Links
-- Demo Video: [add link]
+- Demo Video: [[here](https://duke.zoom.us/rec/share/Yy2yVKnfPs9wx9Jyux2_fTnGHXWf5F2LV1RlVjZrVSed1yzpzx2i0b_adatam0EZ.UWW95h5cZjo4xvgt?startTime=1777261120000)]
 - Technical video: [[here](https://duke.zoom.us/rec/share/3Rf-mHArygewlHaC2zQMsAsyKAbbmzw3Qj-aBc2oS7bR4IPCXAKAzgmTCxyOpsSy.4JMD-SCGPxL00LPz?startTime=1777260078000)]
 
 
