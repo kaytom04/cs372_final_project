@@ -64,30 +64,27 @@ In notebooks/evaluate.ipynb, multiple tests were run to evaluate the system:
 
 - Prompt Engineering Comparison
     - In order to understand the impact of prompt engineering, I tried 3 different prompts (friendly, concise, nutritionist). 
-    - For example: 
-    ============================================================
-    Query: 'I need a late night snack'
-    ============================================================
-
-    [V1 Friendly]
-    Late night cravings are the best. I've got just the thing for you. Head over to Gothic Grill, open until Midnight (or 1 am on Fridays and Saturdays), and grab some Mozzarella Sticks or Crispy Cauliflower - both are perfect for a satisfying late night snack. If you're in the mood for something a bit different, you could also swing by The Devil's Krafthouse, also open until Midnight, and try their Pretzels with beer cheese and mustard.
-
-    [V2 Concise]
-    Mozzarella Sticks at Gothic Grill — A satisfying late-night snack to curb your cravings.
-    Crispy Cauliflower at Gothic Grill — A crispy and savory option to fulfill your late-night hunger, available until Midnight (sun - thur) and 1 am (fri - sat).
-
-    [V3 Nutritionist]
-    Late night cravings can be tough to resist. I've got just the things for you. Here are a few options that might hit the spot:
-
-    1. **Mozzarella Sticks** at Gothic Grill (open till Midnight on Sun - Thur, and 1 am on Fri - Sat) - A classic comfort food that's easy to devour in the wee hours. They're fried, cheesy, and sure to satisfy your late-night cravings.
-    2. **Crispy Cauliflower** at Gothic Grill (same hours as above) - Another tasty option that's also vegetarian-friendly. The crispy exterior and ranch dipping sauce make for a satisfying snack that's not too heavy.
-    3. **Pretzels with beer cheese and mustard** at The Devil's Krafthouse (open till Midnight, 7 days a week) - A savory, comforting snack that's perfect for a late night pick-me-up. The combination of soft pretzels, creamy beer cheese, and tangy mustard is a winner.
-
-    All of these options are readily available during late night hours, so you can't go wrong with any of them. Enjoy your snack!
+    - For example:
+    - ![alt text](/notebooks/data/promptquery.png)
     - Average scores were calculated for each of the 3 different prompt variations:
-    - ![alt text](/notebooks/promptscores.png)
+    - ![alt text](/notebooks/data/promptscores.png)
     - When comparing the 3 different prompt variations, the Friendly prompt performed the best as it produced relevant information in a clear and helpful way. It provided specific recommendations along with explanations that could help an individual with determining what to eat. The concise prompt was good at providing relevant and helpful information, but I believe that some of its responses could be shortened even more to make them more concise. The nutritionist prompt was very clear in all its responses but for only 1 of the tests provided good information in terms of why its meal recommendations are nutritional/beneficial for a person. The other responses lacked good nutritional information which could also be a limitation due to the data that the model has access to. Overall, the friendly prompt had the best balance.
 - Retrieval Quality Evaluation:
     - The model was evaluated based on 3 metrics: Average cosine similarity score, tag overlap (recall), and mean precision.
     - ![alt text](/notebooks/data/retrievalquality.png) 
     - As seen in the results, the model performed well for retreival quality, scoring highest when querying for items that are spicy and comfort foods. One notable failure was the tag overlap for indian food, indicating that the model is limited by the tag generation for food items.
+- Embedding Model Comparison
+    - Two sentence embedding models were evaluated on the same queries, specifically the all-MiniLM-L6-v2 and the all-mpnet-basev2
+    - ![alt text](/notebooks/data/model_comparison.png)
+    - MiniLM outperformed mpnet on this dataset with a mean score of 0.610 vs 0.561. It was chosen as the main embedding model due to its higher retrieval scores despite being a smaller model. In addition it runs ~ 3x faster on CPU which was important for response latency.
+-  Multi-Turn Conversation example
+    - I included this example to show how multi-turn coversation was performing within the model. Although the model was able to remember key facts like the person being vegetarian it struggled in some instances. For example when prompted with what time does that place closed, it struggled to provide the correct time/location. (refer to notebooks/evaluate.ipynb file)
+- Item vs Chunk Retrieval
+    - I included this example to demonstrate the chunking vs item performance as part of my custom rag system. Although the final system only implements the embedding model selection with comparison and reranking, I had included chunking to see if it would improve my system. Although the model performed well in the first comparison of options available at skillet, it struggled with recommending available food at tandoor by only providing desserts, rather than giving solid food options. (refer to notebooks/evaluate.ipynb file)
+- Edge Case Analysis
+    - ![alt text](/notebooks/data/retrieval_scores.png)
+    - Overall, the system seems to handle dietary restriction queries well as it achieved a 0.6 for the gluten and dairy allergy case, and correctly produced a viable food option. 
+    - The model struggled when queried with an out of hours request as it struggled to realize that the establishment was closed
+    - The two instances that scored the lowest was the query for east campus and the cheapest thing which makes sense as the model wasn't given information about east campus or prices
+    - The gibberish query was decent as the model managed to suggest some food despite being prompted with nonsense.
+
