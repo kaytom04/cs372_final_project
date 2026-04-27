@@ -70,16 +70,9 @@ In notebooks/evaluate.ipynb, multiple tests were run to evaluate the system:
 | Prompt | Response |
 |---|---|
 | V1 Friendly | [I've got just the thing for you. If you're in the mood for something spicy, I'd recommend checking out the Spicy Miso Ramen at Ginger + Soy, open from 11 am to 9 pm. Alternatively, you could head to Il Forno for their Spicy Il Forno, also available from 11 am to 9 pm. If you're looking for something a bit different, the Spicy Tuba Yubu at Gyotaku is another great option, and they're open from 11 am to 9 pm as well.] |
-| V2 Concise | [Spicy Miso Ramen at Ginger + Soy — This dish is a great option for a spicy dinner with its combination of spicy miso soup, pork belly or fried tofu, and various toppings.
-Spicy Il Forno at Il Forno — This pasta dish is perfect for those who enjoy spicy food, featuring fennel sausage, spicy arrabbiata sauce, and roasted tomatoes, all served with rigatoni. 
+| V2 Concise | [Spicy Miso Ramen at Ginger + Soy — This dish is a great option for a spicy dinner with its combination of spicy miso soup, pork belly or fried tofu, and various toppings. Spicy Il Forno at Il Forno — This pasta dish is perfect for those who enjoy spicy food, featuring fennel sausage, spicy arrabbiata sauce, and roasted tomatoes, all served with rigatoni. 
 11 am - 9 pm] |
-| V3 Nutritionist | [Spicy food can be so satisfying. I've got three options that might hit the spot for you:
-
-1. **Spicy Miso Ramen** at Ginger + Soy (11 am - 9 pm, mon - sun): This dish is a great combination of spicy and savory, with a rich miso soup base, pork belly or fried tofu, and plenty of veggies. The spicy kick will definitely warm you up.
-2. **Spicy Il Forno** at Il Forno (11 am - 9 pm, mon - sun): If you're in the mood for pasta, this spicy arrabbiata sauce-based dish with fennel sausage and rigatoni will deliver. It's a hearty, flavorful option that's sure to satisfy your craving for something spicy.
-3. **Spicy Tuba Yubu** at Gyotaku (11 am - 9 pm, mon - sun): For a seafood option, this dish features fried tofu, spicy tuna, crispy onion, and spicy mayo. It's a unique and flavorful combination that's sure to spice up your dinner.
-
-All of these options are available for dinner, so you can choose the one that sounds most appealing to you. Enjoy!] |
+| V3 Nutritionist | [Spicy food can be so satisfying. I've got three options that might hit the spot for you: 1. **Spicy Miso Ramen** at Ginger + Soy (11 am - 9 pm, mon - sun): This dish is a great combination of spicy and savory, with a rich miso soup base, pork belly or fried tofu, and plenty of veggies. The spicy kick will definitely warm you up. 2. **Spicy Il Forno** at Il Forno (11 am - 9 pm, mon - sun): If you're in the mood for pasta, this spicy arrabbiata sauce-based dish with fennel sausage and rigatoni will deliver. It's a hearty, flavorful option that's sure to satisfy your craving for something spicy. 3. **Spicy Tuba Yubu** at Gyotaku (11 am - 9 pm, mon - sun): For a seafood option, this dish features fried tofu, spicy tuna, crispy onion, and spicy mayo. It's a unique and flavorful combination that's sure to spice up your dinner. All of these options are available for dinner, so you can choose the one that sounds most appealing to you. Enjoy!] |
 
 **Query 2: "I'm vegetarian and want a healthy lunch"**
 *(Dietary restriction query — tests constraint handling)*
@@ -87,16 +80,9 @@ All of these options are available for dinner, so you can choose the one that so
 | Prompt | Response |
 |---|---|
 | V1 Friendly | [You're in luck because I've got some fantastic options for you. For a healthy vegetarian lunch, I recommend checking out Sprout and trying their Falafel Pita Pocket, Spicy Cauliflower Wrap, or building your own 3 Composed Salad with their delicious and fresh ingredients. Sprout is open from 11 am to 9 pm, so you can swing by and grab a bite that fits your mood and dietary needs.] |
-| V2 Concise | [Falafel Pita Pocket at Sprout — This is a great option for a healthy and satisfying vegetarian lunch with a balance of flavors and textures.
-Spicy Cauliflower Wrap at Sprout — This wrap is a tasty and healthy choice, packed with spicy cauliflower and fresh vegetables, making it an ideal option for a vegetarian lunch. 
+| V2 Concise | [Falafel Pita Pocket at Sprout — This is a great option for a healthy and satisfying vegetarian lunch with a balance of flavors and textures. Spicy Cauliflower Wrap at Sprout — This wrap is a tasty and healthy choice, packed with spicy cauliflower and fresh vegetables, making it an ideal option for a vegetarian lunch. 
 8 am - 10:30 am (mon - fri); 11 am - 9 pm (mon - sun)] |
-| V3 Nutritionist | [As a vegetarian looking for a healthy lunch, I'd recommend the following options at Sprout:
-
-1. **Falafel Pita Pocket**: This is a great choice, packed with protein-rich falafel, fresh lettuce, tomato, and red onion, all wrapped in a pita. It's a satisfying and healthy option that's also vegetarian-friendly.
-2. **3 Composed Salad**: This option allows you to pick three ingredients from a variety of healthy options like kale salad, sweet potato, chickpeas, and more. You can create a salad that suits your taste and dietary needs.
-3. **Spicy Cauliflower Wrap**: If you're in the mood for something a bit spicy, this wrap is a great option. It's filled with roasted cauliflower, cucumber, pickled onion, and tahini, all wrapped in a whole wheat wrap.
-
-All of these options are available at Sprout, which is open from 11 am to 9 pm (Monday to Sunday). You can also consider adding a side like brown rice, roasted vegetables, or a kale salad to complement your meal. Enjoy your lunch!] |
+| V3 Nutritionist | [As a vegetarian looking for a healthy lunch, I'd recommend the following options at Sprout: 1. **Falafel Pita Pocket**: This is a great choice, packed with protein-rich falafel, fresh lettuce, tomato, and red onion, all wrapped in a pita. It's a satisfying and healthy option that's also vegetarian-friendly. 2. **3 Composed Salad**: This option allows you to pick three ingredients from a variety of healthy options like kale salad, sweet potato, chickpeas, and more. You can create a salad that suits your taste and dietary needs. 3. **Spicy Cauliflower Wrap**: If you're in the mood for something a bit spicy, this wrap is a great option. It's filled with roasted cauliflower, cucumber, pickled onion, and tahini, all wrapped in a whole wheat wrap. All of these options are available at Sprout, which is open from 11 am to 9 pm (Monday to Sunday). You can also consider adding a side like brown rice, roasted vegetables, or a kale salad to complement your meal. Enjoy your lunch!] |
 
 **Query 3: "I need a late night snack"**
 *(Time-sensitive query — tests hours awareness)*
@@ -106,11 +92,7 @@ All of these options are available at Sprout, which is open from 11 am to 9 pm (
 | V1 Friendly | [Late night cravings are the best. I've got just the thing for you. Head over to Gothic Grill, open until Midnight (or 1 am on Fridays and Saturdays), and grab some Mozzarella Sticks or Crispy Cauliflower - both are perfect for a satisfying late night snack. If you're in the mood for something a bit different, you could also swing by The Devil's Krafthouse, also open until Midnight, and try their Pretzels with beer cheese and mustard.] |
 | V2 Concise | [Mozzarella Sticks at Gothic Grill — A satisfying late-night snack to curb your cravings.
 Crispy Cauliflower at Gothic Grill — A crispy and savory option to fulfill your late-night hunger, available until Midnight (sun - thur) and 1 am (fri - sat).] |
-| V3 Nutritionist | [Late night cravings can be tough to resist. I've got just the things for you. Here are a few options that might hit the spot:
-
-1. **Mozzarella Sticks** at Gothic Grill (open till Midnight on Sun - Thur, and 1 am on Fri - Sat) - A classic comfort food that's easy to devour in the wee hours. They're fried, cheesy, and sure to satisfy your late-night cravings.
-2. **Crispy Cauliflower** at Gothic Grill (same hours as above) - Another tasty option that's also vegetarian-friendly. The crispy exterior and ranch dipping sauce make for a satisfying snack that's not too heavy.
-3. **Pretzels with beer cheese and mustard** at The Devil's Krafthouse (open till Midnight, 7 days a week) - A savory, comforting snack that's perfect for a late night pick-me-up. The combination of soft pretzels, creamy beer cheese, and tangy mustard is a winner.
+| V3 Nutritionist | [Late night cravings can be tough to resist. I've got just the things for you. Here are a few options that might hit the spot: 1. **Mozzarella Sticks** at Gothic Grill (open till Midnight on Sun - Thur, and 1 am on Fri - Sat) - A classic comfort food that's easy to devour in the wee hours. They're fried, cheesy, and sure to satisfy your late-night cravings. 2. **Crispy Cauliflower** at Gothic Grill (same hours as above) - Another tasty option that's also vegetarian-friendly. The crispy exterior and ranch dipping sauce make for a satisfying snack that's not too heavy. 3. **Pretzels with beer cheese and mustard** at The Devil's Krafthouse (open till Midnight, 7 days a week) - A savory, comforting snack that's perfect for a late night pick-me-up. The combination of soft pretzels, creamy beer cheese, and tangy mustard is a winner.
 
 All of these options are readily available during late night hours, so you can't go wrong with any of them. Enjoy your snack!] |
 
