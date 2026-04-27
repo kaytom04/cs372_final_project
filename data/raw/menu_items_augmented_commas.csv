@@ -1,0 +1,398 @@
+item_id,location_id,name,meal_period,description,tags
+1,1,"Bacon, Egg, and Cheese Sandwich",Breakfast,"Breakfast sandwich with bacon, egg, and cheese","comfort, high_protein"
+2,1,Egg and Cheese Sandwich,Breakfast,Breakfast sandwich with egg and cheese,"comfort, high_protein"
+3,1,"Sausage, Egg, and Cheese Sandwich",Breakfast,"Breakfast sandwich with sausage, egg, and cheese","comfort, high_protein"
+4,1,Coffee Au Lait,Drink,"Coffee Au Lait available Iced or Hot and with milk substitutes of oat, skim, and whole","caffeinated, hot, cold, dairy, non_dairy"
+5,1,Coffee,Drink,Coffee available Iced or Hot and with the option to add a splash of milk,"caffeinated, hot, cold"
+6,1,Mexican Coffee,Drink,"Coffee with cinnamon, nutmeg, and steamed milk with options of milk subsitutes of oat, skim, or whole","caffeinated, hot, cold, sweet"
+7,1,Nitro Cold Brew,Drink,Nitro cold brew available iced,"caffeinated, cold"
+8,1,Chai Latte,Drink,"Chai Latte available Iced or Hot and with milk substitutes of oat, skim or whole","caffeinated, cold, hot, sweet"
+9,1,Hot Chocolate,Drink,"Hot Chocolate available  with milk substitutes of oat, skim or whole","sweet, dairy, non_dairy"
+10,1,Mango Smoothie,Drink,Mango Smoothie,"cold, sweet"
+11,1,Matcha Latte,Drink,"Matcha Latte available Iced or Hot and with milk substitutes of oat, skim or whole","caffeinated, hot, cold, sweet"
+12,1,Pineapple Smoothie,Drink,Pineapple Smoothie,"cold, sweet"
+13,1,Steamer Milk,Drink,"Heated milk available with oat, skim or whole milk","hot, low_sugar, non_caffeinated"
+14,1,White Hot Chocolate,Drink,"Hot Chocolate available  with milk substitutes of oat, skim or whole","sweet, dairy, non_dairy"
+15,1,Strawberry Smoothie,Drink,Strawberry Smoothie,"cold, sweet"
+16,1,Caramello,Drink,"Caramel, vanilla, steamed milk, and caramel drizzle. Available Iced or Hot and with milk substitutions of oat, skim, or whole milk","sweet, dairy, non_dairy, caffeinated"
+17,1,Dirty Chai,Drink,"Chai Latte with a shot of espresso available Iced or Hot and with milk substitutes of oat, skim or whole","sweet, dairy, non_dairy, caffeinated"
+18,1,La Vanilla,Drink,"Vanilla latte availableIced or Hot and with milk substitutes of oat, skim, or whole","sweet, dairy, non_dairy, caffeinated"
+19,1,Mexican Latte,Drink,"Latte with Mexican Coffee available Iced or Hot and with milk substitutes of oat, skim, or whole","sweet, dairy, non_dairy, caffeinated"
+20,1,Oprah Mocha,Drink,"Mocha available Iced or Hot and with milk substitues of oat, skim, or whole","sweet, dairy, non_dairy, caffeinated"
+21,1,Turle Mocha,Drink,"Mocha with caramel syrup available Iced or Hot and with milk substitues of oat, skim, or whole","sweet, dairy, non_dairy, caffeinated"
+22,1,Americano,Drink,"Americano available Iced or Hot and with milk substitutes of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+23,1,Cappucino,Drink,"Cappucino available Iced or Hot and with milk substitutes of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+24,1,Cortado,Drink,"Cortado available Iced or Hot and with milk substitutes of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+25,1,Espresso,Drink,Shot of Espresso,"dairy, non_dairy, caffeinated, hot, cold"
+26,1,Flat White,Drink,"Flat White available Iced or Hot and with milk substitutes of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+27,1,Latte,Drink,"Latte available Iced or Hot and with milk substitutes of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+28,1,Macchiato,Drink,"Macchiato available Iced or Hot and with milk substitutes of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+29,1,Mocha,Drink,"Mocha available Iced or Hot and with milk substitues of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+30,1,Red Eye,Drink,"Brew dripped coffee with shot of espresso available Iced or Hot and with milk substitutes of oat, skim, or whole","dairy, non_dairy, caffeinated, hot, cold"
+31,2,Chicken Tenders,"lunch, dinner",Chicken Tenders,
+32,2,Crispy Cauliflower,"lunch, dinner, snack",crispy cauliflower with ranch,vegetarian
+33,2,Fried Shrimp,"lunch, dinner",Fried Shrimp,
+34,2,Sweet Potato Waffle Fries,"lunch, dinner, snack",Sweet Potato Waffle Fries,"vegetarian, vegan"
+35,2,Buffalo Chicken Macaroni and Cheese,"lunch, dinner",Buffalo Chicken Macaroni and Cheese,
+36,2,Macaroni and Cheese Cup,"lunch, dinner, snack",Macaroni and Cheese,vegetarian
+37,2,Mozzarella Sticks,"lunch, dinner, snack",Mozzarella Sticks,vegetarian
+38,2,Chicken Cheese Nachos,"lunch, dinner, snack",Shredded Chicken and Cheese Nachos,
+39,2,Bavarian Pretzel,"lunch, snack",Bavarian Pretzel,"vegetarian, vegan"
+40,2,Tortilla Chips with Guacamole,snack,Tortilla Chips with Guacamole,"vegetarian, vegan"
+41,2,Chicken Wings,"lunch, dinner",chicken wings,
+42,2,Caesar Salad,"lunch, dinner",Caesar Salad,
+43,2,Caprese Salad,"lunch, dinner",Caprese Salad,vegetarian
+44,2,Grilled Chicken Salad,"lunch, dinner",Grilled Chicken Salad,
+45,2,Crispy Buffalo Chicken Salad,"lunch, dinner",Crispy Buffalo Chicken Salad,
+46,2,Crispy Chicken Caesar Salad,"lunch, dinner",Crispy Chicken Caesar Salad,
+47,2,Tomato Basil Soup,"lunch, dinner",Tomato Basil Soup,vegetarian
+48,2,BLT-A Sandwich,"lunch, dinner","Bacon, lettuce, tomato and avocado sandwich",
+49,2,Vegetable Cheesesteak,"lunch, dinner","Vegetable Cheesesteak with grilled portobello mushrooms, onions, peppers, vegan cheese and vegan pesto",vegetarian
+50,2,Buffalo Chicken Wrap,"lunch, dinner","Buffalo Chicken Wrap with crispy chicken, lettuce, tomato, shredded cheese and ranch",
+51,2,Buffalo Shrimp Wrap,"lunch, dinner","Buffalo Shrimp Wrap with Crispy Shrimp tossed in Buffalo Sauce, Lettuce, Tomato, Shredded Monterey  Jack Cheese and Ranch",
+52,2,Chicken Caesar Wrap,"lunch, dinner","Chicken Caesar Wrap with sliced grilled chicken, romaine lettuce, parmesan, and tomatoes",
+53,2,Chicken Philly,"lunch, dinner","Sauteed grilled chicken with peppers, onions, provolone chees on a hoagie",
+54,2,Southern Fried Chicken Sandwich,"lunch, dinner","Southern Fried Chicken Sandwich with shredded lettuce, dill pickles, and mayo",
+55,2,Grilled Chicken Parm Sandwich,"lunch, dinner","Grilled Chicken Parm Sandwich with provolone, spinach, and red sauce",
+56,2,Grilled Chicken Sandwich,"lunch, dinner","Grilled Chicken Sandwich with lettuce, tomato, onion, cheese, pickle",
+57,2,Philly Cheesesteak,"lunch, dinner","Philly Cheesesteak with melty provolone, grilled onions, and peppers",
+58,2,Turkey Grinder,"lunch, dinner",Turkey Grinder with smoked gouda on sourdough with arugula and sundried tomato aioli,
+59,2,Grilled Cheese,"lunch, dinner","Grilled Cheese with provolone, gouda, and american cheese",vegetarian
+60,2,Chicken Foccacia,"lunch, dinner",Chicken Foccacia,
+61,2,Buffalo Cauliflower Wrap,"lunch, dinner","Buffalo Cauliflower Wrap with crispy fried cauliflower tossed in buffalo sauce with lettuce, tomatoes, and blue cheese dressing",vegetarian
+62,2,Crispy Buffalo Chicken Sandwich,"lunch, dinner",Crispy Buffalo Chicken Sandwich with pickles and lettuce,
+63,2,Crispy Sweet Chili Chicken Sandwich,"lunch, dinner",Crispy Sweet Chili Chicken Sandwich with lettuce and pickles,
+64,2,Turkey Club Wrap,"lunch, dinner","Turkey Club Wrap with sliced turkey breast, bacon, avocado, lettuce, honey mustard",
+65,2,Terriyaki Grilled Chicken Sandwich,"lunch, dinner","Terriyaki Grilled Chicken Sandwich with grilled chicken, sweet teriyaki sauce, pineapple, lettuce, tomatoes, and red onion",
+66,2,Island Pizza,"lunch, dinner","Pizza with ham, bacon, caramelized onion, pineapple, jalapeno",
+67,2,Build Your Own Pizza,"lunch, dinner",Choose from a variety of protein and toppings,
+68,2,Buffalo Chicken Pizza,"lunch, dinner","Pizza with crispy buffalo chicken, bacon, monterey jack, and mozzarella ranch drizzle",
+69,2,Meateater Pizza,"lunch, dinner","Pizza with bacon, ham, pepperoni, sausage, mozzarella, and marinara sauce",
+70,2,Pepperoni Calzone,"lunch, dinner","Baked calzone with pepperoni, ricotta, and marinara sauce",
+71,2,Cali Chicken Pizza,"lunch, dinner","Grilled Chicken Pesto, Tomato, Arugula, Fresh Avocado, Mozzarella",
+72,2,Cheese Pizza,"lunch, dinner",Cheese Pizza,vegetarian
+73,2,Veggie Calzone,"lunch, dinner","Baked calzone with mozzarella, ricotta, marinara, red onions, red bell peppers, spinach, and mushrooms",vegetarian
+74,2,Veg Pizza,"lunch, dinner","Pizza with spinach, mushroom, red pepper, onion, olives, and vegan cheese","vegetarian, vegan"
+75,2,BBQ Chicken Pizza,"lunch, dinner","Pizza with chicken, mozzarella, tomato, onion, garlic, marinara, bbq sauce",
+76,2,Ice Cream,dessert,"Available flavours of ice cream: Chocolate cookie dough, Chocolate, coffee, cookies and cream, devi's delight, mint chocolate chip, strawberry, vanilla",vegetarian
+77,2,Tacos,"lunch, dinner","Taco Protein options: pulled chicken, steak, blackened mahi, calamari, crispy shrimp, veggie",vegetarian
+78,2,Build Your own burger,"lunch, dinner",build your own burger,
+79,2,Double Patty Melt Burger,"lunch, dinner","Double patty melt with grilled onions, swiss cheese",
+80,2,Duke Blue Cheese burger,"lunch, dinner","Duke Blue Cheese burger with blue cheese crumbles, fresh spinach, mushrooms, green goddess",
+81,2,Gothic Smash Burger,"lunch, dinner","Gothic lb smash burger with american cheese, pickles, romaine lettuce, tomato, devil dip",
+82,2,Cali Smash Burger,"lunch, dinner","Two beef patties layered with melted american cheese, crisp iceberg lettuce, tomato slices, pickles and avocado",
+83,3,Build Your Own Bowl,"lunch, dinner","Build your own bowl with base, protein, toppings and sauce",
+84,3,Acai Bowl,"snack, dessert","Build your own acai bowl with base choices of pineapple whip, pitaya dragon fruit, traditional acai,  blue spirulina, mango cream, passion fruit, strawberry, cacao. Toppings include banana, pineapple, cranberries,  berries, kiwi, coconut, bee pollen, chia seeds, honey, granola, sunbutter","vegetarian, vegan"
+85,3,Dole Whip,dessert,Dole Whip available as classic or mango,"vegetarian, vegan"
+86,3,Autumn Harvest Salad,"lunch, dinner","Spinach & kale blend, chickpeas, apples, carrots, cucumbers, cranberries, pumpkin seeds, lime vinaigrette",vegetarian
+87,3,Mediterranean Thyme,"lunch, dinner","Maple zaatar sweet potatoes, lemon thyme grilled chicken, chickpeas, marinated artichokes, lemon garlic sauce, and fresh lime wedge",
+88,3,Carolina BBQ Thyme,"lunch, dinner","Pulled Pork BBQ, maple sweet potatoes, cajun pintos, pickled red onions, pickled jalapenos, cinnamon grilled pineapple",
+89,3,Hot Honey Chicken Tenders,"lunch, dinner",Hot honey chicken tenders,
+90,3,Taco Thyme,"lunch, dinner","Taco Protein options: caribbean jerk chicken, lemon thyme grilled chicken, shredded beef, sweet potatoes. Taco toppings: brown rice and quinoa, cilantro line black beans, fire roasted corn with poblano peppers, mango salsa, tomatillo salsa verde","vegetarian, vegan"
+91,3,Crispy Chickpea Falafel Wrap,"lunch, dinner","Chickpea falafel, cucumbers, garlic hummus, green goddess ranch dressing, red pickled onion, shredded kale","vegetarian, vegan"
+92,3,Grilled Chicken Nuggets,"lunch, dinner",Grilled Chicken Nuggets,
+93,3,Signature Lavender Lemonade,drink,Lavendar Lemonade,sweet
+94,4,Tokyo,"lunch, dinner","Teriyaki chicken rice bowl with corn, sweet potato, kale salad, edamame, green onion, crunch, spicy mayo, eel sauce, sesame seed. Options for white rice, brown rice or mixed greens.",
+95,4,Hong Kong ,"lunch, dinner","Spicy pork rice bowl with broccoli, cababge and red pepper, cucumber, cilantro, sesame seed, crunch, sambal sauce, eel sauce. Options for white rice, brown rice or mixed greens.",
+96,4,Shanghai,"lunch, dinner","Ginger Chicken rice bowl with cabbage and red pepper, zucchini, cilantro, crunch, white sauce, and sesame seeds. Options for white rice, brown rice or mixed greens.",
+97,4,California,"lunch, dinner","Teriyaki tofu rice bowl with zucchini, kale salad, broccoli, cilantro, and cusabi sauce. Options for white rice, brown rice or mixed greens.",vegetarian
+98,4,Seoul,"lunch, dinner","Korean BBQ beef rice bowl with zucchini, pickled radish, pickled carrot, kimchi slaw, kale salad, green onion, fried egg, sesame seeds, gochujang, white sauce, and sesame oil. Options for white rice, brown rice or mixed greens.",
+99,4,Pad Thai,"lunch, dinner","Stir fried noodles with eggs, vegetables, options of chicken or tofu, in a tamarind-based sauce",
+100,4,Tteokbokki,"lunch, dinner","Tteokbokki with gochujang sauce, fish cake, beef dumpings and boiled eggs",
+101,4,Make Your Own Bowl,"lunch, dinner","Choose one protein, four vegetables, toppings, and any sauce. Options for white rice, brown rice or mixed greens.",
+102,4,Salmon Poke Bowl ,"lunch, dinner","salmon bowl with carrot, cabbage, kale salad, seaweed salad, crab salad, and crunch. Options for white rice, brown rice or mixed greens.",
+103,4,Tuna Poke Bowl,"lunch, dinner","tuna bowl with carrot, cabbage, kale salad, seaweed salad, crab salad, and crunch. Options for white rice, brown rice or mixed greens.",
+104,4,Spicy Tuna Poke Bowl,"lunch, dinner","Spicy tuna bowl with carrot, cabbage, kale salad, seaweed salad, crab salad, and crunch. Options for white rice, brown rice or mixed greens.",
+105,4,Spicy Miso Ramen,"lunch, dinner","Spicy miso soup ramen with bamboo shoots, bean sprouts, pork belly or fried tofu, green onion, marinated egg, and corn",
+106,4,Tonkotsu Ramen,"lunch, dinner","Tonkotsu soup ramen with bamboo shoots, bean sprouts, pork belly or fried tofu, green onion, marinated egg, and corn",
+107,4,Beef Dumplings,"lunch, dinner, snack",Beef dumplings with kimchi slaw,
+108,4,Vegetable Dumplings,"lunch, dinner, snack",Vegetable Dumplings with kimchi slaw,vegetarian
+109,4,Chicken Dumplings,"lunch, dinner, snack",Chicken Dumplings with kimchi slaw,
+110,4,Vegetable spring rolls,"lunch, dinner, snack",Vegetable spring rolls,vegetarian
+111,5,Nigiri and Sashimi,"lunch, dinner, snack","Options: eel, salmon, shrimp, tuna, yellowtail",
+112,5,Sashimi bowl,"lunch, dinner","Choice of sashimi with rice or salad base and topped with red pepper, edamame, pickles, cucumber, crab salad. Options for eel sauce, spicy mayo, ginger dressing, wasabi dressing or gochujang sauce",
+113,5,Edamame,"lunch, dinner, snack",edamame,"vegetarian, vegan"
+114,5,Miso soup,"lunch, dinner, snack",Miso Soup,
+115,5,Salmon Tower,"lunch, dinner","salmon with sushi rice, avocado, crab salad, and cucumber. Topped with white sauce, spicy mayo, eel sauce, masago, scallions, cilantro, and sesame seeds. Served with chips",
+116,5,Seaweed salad,"lunch, dinner, snack",seaweed salad,"vegetarian, vegan"
+117,5,Tuna Tower,"lunch, dinner","tuna with sushi rice, avocado, crab salad, and cucumber. Topped with white sauce, spicy mayo, eel sauce, masago, scallions, cilantro, and sesame seeds. Served with chips",
+118,5,Make your own sushi,"lunch, dinner","Options: eel, salmon, shrimp, tuna, yellowtail, spicy tuna, tempura shrimp, crab salad, cucumber. Sauces: eel, spicy mayo, gocujang, sriracha","vegetarian, vegan"
+119,5,Atlantic,"lunch, dinner","Sushi burrito with salmon, avocado, cucumber, lettuce, slaw, masago, crunch, and spicy mayo",
+120,5,Pacific,"lunch, dinner","Sushi burrito with tuna, kale, cucumber, lettuce, cilantro, masago, crunch, and eel sauce",
+121,5,Arctic,"lunch, dinner","Sushi burrito with spicy tubna, crab salad, cucumber, lettuce, avocado, masago and sriracha",
+122,5,Southern,"lunch, dinner","Sushi burrito with shrimp tempura, avocado, cucumber, lettuce, slaw, masago, crab salad, crunch, eel sauce, and spicy mayo",
+123,5,Blossom Roll ,"lunch, dinner","Sushi roll with spicy tuna, crab salad, cucumber, seared salmon, crispy onion, white sauce, and eel sauce",
+124,5,Coco Roll,"lunch, dinner","Sushi roll with spicy tuna, cucmber, crab salad, seaweed salad, and white sauce",
+125,5,Fire Cracker Roll,"lunch, dinner","Sushi roll with shrimp tempura, pickled jalapeno, cucmber, seared tuna, black rice, crunch, and soy garlic mayo",
+126,5,Mary Roll,"lunch, dinner","Sushi roll with crab salad, avocado, cucumber, spicy tuna, scallion, masago, and spicy mayo",
+127,5,Nigiri Combo,"lunch, dinner","tuna, salmon, yellowtail nigiri",
+128,5,White Tiger Roll,"lunch, dinner","Sushi roll with shrimp tempura, spicy tuba, crab salad, spicy mayo, and eel sauce",
+129,5,California Roll,"lunch, dinner","Sushi roll with crab salad, avocado, cucumber, sesame seeds",
+130,5,Veggie Roll,"lunch, dinner","Sushi roll with avocado, cucumber, picked carrot, and sesame seed","vegetarian, vegan"
+131,5,Salmon Avocado Roll,"lunch, dinner","Sushi roll with salmon, avocado, and sesame seed",
+132,5,Salmon Crunch Roll,"lunch, dinner","Sushi roll with salmon, avocado, cream cheese, crunch and eel sauce",
+133,5,Spicy Tuna Roll,"lunch, dinner","Sushi roll with spicy tuna, cucumber, sesame seed, and spicy mayo",
+134,5,Dancing Eel Roll,"lunch, dinner","Sushi roll with crab salad, cucumber, avocado, eel, and eel sauce",
+135,5,Rainbow Roll,"lunch, dinner","Sushi roll with crab salad, cucumber, avocado, tuna, salmon, and yellowtail",
+136,5,Shrimp Tempura Roll,"lunch, dinner","Sushi roll with shrimp tempura, crab salad, cucumber, avocado, spicy mayo, eel-sauce, and crispy onion",
+137,5,Shrimp Tempura Yubu,"lunch, dinner","Fried tofu, fried shrimp, crispy onion, green onion, masago, ginger and eel sauce",
+138,5,Salmon yubu,"lunch, dinner","fried tofu, salmon, crispy onion, and spicy mayo",
+139,5,Seaweed salad,"lunch, dinner",fried tofu and seaweed salad,"vegetarian, vegan"
+140,5,Spicy Tuba Yubu,"lunch, dinner","fried tofu, spicy tuna, crispy onion, and spicy mayo",
+141,6,London Broil,"lunch, dinner","Beef flank steak with two sides, bread roll, and sauce",
+142,6,Prime Rib,"lunch, dinner","Prime Rib with two sides, bread roll, and sauce",
+143,6,Pork Chop,"lunch, dinner","Pork Chop with two sides, bread roll, and sauce",
+144,6,Beef Skewer,"lunch, dinner","Beef skewer with two sides, bread roll, and sauce",
+145,6,Ribeye,"lunch, dinner","Beef ribeye with two sides, bread roll, and sauce",
+146,6,BBQ Ribs,"lunch, dinner","BBQ ribs with two sides, bread roll, and sauce",
+147,6,Quarter flame roasted chicken,"lunch, dinner","quarter flame roasted chicken with two sides, bread roll, and sauce",
+148,6,Half flame roasted chicken,"lunch, dinner","Half flame roasted chicken with two sides, bread roll, and sauce",
+149,6,Wood fired boneless chicken breast,"lunch, dinner","Wood fired boneless chicken breast with two sides, bread roll, and sauce",
+150,6,Paella Mixta,"lunch, dinner","Pulled chicken, chorizo, shrimp, roasted peppers, peas, tomato in saffron rice",
+151,6,Shrimp Skewer,"lunch, dinner","Shrimp skwere with two sides, bread roll, and sauce",
+152,6,Atlantic Salmon Filet,"lunch, dinner","Salmon with two sides, bread roll, and sauce",
+153,6,Mahi Mahi,"lunch, dinner","Mahi Mahi with with two sides, bread roll, and sauce",
+154,6,Yellow Fin Tuna,"lunch, dinner","Yellow fin tuna with two sides, bread roll, and sauce",
+155,6,Sides,"lunch, dinner, snack","Options: twice baked potato, grilled tomato salad, roasted broccoli, garlic mashed potatoes, grilled asparagus, steak house wedges, cranberry quinoa, roasted vegetables, brown rice, sweet potato fries, baked potato, paella mixta",
+156,6,Prime Rib Steak and Cheese,"lunch, dinner",Prime Rib steak and cheese sandwich with cheese and mushrooms and a choice of side,
+157,6,Chophouse Burger,"lunch, dinner","Burger with cheese, lettuce, tomato, onion, cheddar  or swiss cheese, steak sauce",
+158,6,Loaded Goat Burger,"lunch, dinner","Burger with arugula, red pepper, and goat cheese",
+159,6,Black and Blue Burger,"lunch, dinner","Burger with mixed greens, red onion, greens, mustard and blue cheese",
+160,6,Ultimate Grilled Chicken Sandwich,"lunch, dinner","Chicken sandwich with mixed greens, lettuce, tomato, bacon, swiss cheese, chipotle ranch",
+161,6,Smoke house chopped salad,"lunch, dinner","tomato, cucmber, red pepper, celery, roasted corn cheddar cheese, chipotle ranch",
+162,6,The Wedge Salad,"lunch, dinner","iceberg lettuce, cheese, tomato, crumbled bacon, blue cheese dressing",vegetarian
+163,6,Apple and Fennel Salad,"lunch, dinner","apple, fennel, arugula, romaine, almonds, dried cranberries, white wine vinaigrette","vegetarian, vegan"
+164,6,Classic Caesar,"lunch, dinner","Romaine lettuce, parmesan cheese, house croutons, classic caesar dressing",
+165,6,Flourless Chocolate cake,dessert,Blend of four chocolates and ganache,vegetarian
+166,6,Tiramisu,dessert,mascarpone cream on foccee and rum soaked sponce cake and dusted with imported cocoa,vegetarian
+167,6,Raspberry white chocolate cheesecake,"lunch, dinner",white chocolate cheesecake swirled with raspberry,vegetarian
+168,7,Build Your Own Tacos,"lunch, dinner",2 tacos with choice of protein and toppings,"vegetarian, vegan"
+169,7,Build Your Own Arepa Bowl,"lunch, dinner",Latin bowl customized with your choice of toppings,"vegetarian, vegan"
+170,7,Build Your Own Burrito,"lunch, dinner",Customizeable burrito with chips and salsa,"vegetarian, vegan"
+171,7,Build Your Own Quesadilla,"lunch, dinner",Grilled flour tortillas with cheese and your choice of toppings,"vegetarian, vegan"
+172,7,Tortilla Options,"lunch, dinner",Options of corn or flour,"vegetarian, vegan"
+173,7,Base Options,"lunch, dinner","Options of shredded romaine, brown rice, white rice, and black beans","vegetarian, vegan"
+174,7,Protein Options,"lunch, dinner","Options of Grilled Chicken, Carnitas, Barbacoa, Blackened Shrimp, Portobello, Steak, Chorizo, Hot Honey Chicken, Tofrizo","vegetarian, vegan"
+175,7,Toppings Options,"lunch, dinner","Options of Fajita Peppers and onions, fried egg, plaintains, guacamole, pico de gallo, corn salsa, habanero coleslaw, cilantro lime slaw, cotija cheese, monterrey jack cheese","vegetarian, vegan"
+176,7,Sauce Options,"lunch, dinner","Hot Cilantro Aioli, Chimichurri, mild cilantro aioli, fresco sour cream","vegetarian, vegan"
+177,7,Chocolate Chip Cookie,dessert,Chocolate Chip Cookie,
+178,7,Iced Brownie,dessert,Iced Brownie,
+179,7,Chips & Sauce,snack,"Chips with guacamole, salsa, or queso",
+180,8,Healthy Boost,drink,"beets, green apple, celery, carrot, ginger","cold, non_dairy, low_sugar"
+181,8,Grilled Ratatouille,"lunch, dinner",Grilled Ratatouille panini on focaccia bread,
+182,8,Chicken Pesto,"lunch, dinner",Hot sandwich with grilled chicken pesto and melted mozzarella cheese and side of chips,
+183,8,Frappe,drink,"Frappucino with whip cream and options of caramel, chai, matcha, mocha or vanilla flavor. Milk substitutions available of whole, soy skim, or oat","cold, sweet, caffeinated, dairy, non_dairy"
+184,8,Iced Coffee,drink,Iced Coffee,"cold, non_dairy"
+185,8,Cortado,drink,"Cortado available Iced or Hot and with milk substitutes of whole, soy skim, or oat","caffeinated, hot, dairy"
+186,8,Large Milk,drink,"Large Milk (skim, oat, soy or whole)","cold, dairy, non_dairy"
+187,8,Americano,drink,"Americano available Iced or Hot, with milk substitutes of oat, skim,soy, or whole and syrups of caramel, sugar free vanilla, vanilla, or chocolate","caffeinated, hot, cold, dairy, non_dairy, sweet"
+188,8,Cappucino,drink,"Cappucino available Iced or Hot, with milk substitutes of oat, skim,soy, or whole and syrups of caramel, sugar free vanilla, vanilla, or chocolate","caffeinated, hot, cold, dairy, non_dairy, sweet"
+189,8,House Brewed Coffee,drink,House brewed coffee available iced or hot and regular or decaf,"caffeinated, hot, cold, non_dairy"
+190,8,Caramel Leche,drink,"Caramel Leche available Iced or Hot, with milk substitutes of oat, skim,soy, or whole","caffeinated, hot, cold, dairy, non_dairy, sweet"
+191,8,Cafe Latte,drink,"Cafe Latte available Iced or Hot, with milk substitutes of oat, skim,soy, or whole and syrups of caramel, sugar free vanilla, vanilla, or chocolate","caffeinated, hot, cold, dairy, non_dairy, sweet"
+192,8,Mocha Latte,drink,"Mocha Latte available Iced or Hot, with milk substitutes of oat, skim,soy, or whole and syrups of caramel, sugar free vanilla, vanilla, or chocolate","caffeinated, hot, cold, dairy, non_dairy, sweet"
+193,8,Matcha Latte,drink,"Matcha Latte available Iced or Hot, with milk substitutes of oat, skim,soy, or whole","caffeinated, hot, cold, dairy, non_dairy, sweet"
+194,8,Hot Chocolate,drink,"Hot Chocolate available  with milk substitutes of oat, skim or whole","hot, sweet, non_dairy, dairy"
+195,8,Hot Tea,drink,"Earl grey, english breakfast, jasmine, tumeric ginger","caffeinated, hot, non_dairy"
+196,8,Earl Grey Latte,drink,"Earl Grey Latte available Iced or Hot, with milk substitutes of oat, skim,soy, or whole","caffeinated, hot, cold, dairy, non_dairy, sweet"
+197,8,Chai Latte,drink,"Chai Latte available Iced or Hot, with milk substitutes of oat, skim,soy, or whole","caffeinated, hot, cold, dairy, non_dairy, sweet"
+198,8,Vietnamese Coffee,drink,"Vietnamese Coffee available Iced or Hot, with milk substitutes of oat, skim,soy, or whole","caffeinated, hot, cold, dairy, non_dairy, sweet"
+199,8,Apple Juice,drink,Apple Juice,non_dairy
+200,8,Carrot Juice,drink,Carrot Juice,non_dairy
+201,8,Green Monster,drink,"kale, cucumber, celery, organic baby spinach, green apple","cold, non_dairy, low_sugar"
+202,8,Orange Juice,drink,Orange Juice,non_dairy
+203,8,Mango Smoothie,drink,"mango, banana, orange juice, mango sorbet","cold, non_dairy, low_sugar"
+204,8,Strawberry Smoothie,drink,"strawberries, banana, orange juice, mixed berries, sorbet","cold, non_dairy, low_sugar"
+205,8,Apple and Brie crepe,"breakfast, dessert, lunch",Apple and Brie Crepe,
+206,8,Cinnamon Sugar crepe,"breakfast, dessert, lunch",Cinnamon Sugar crepe,
+207,8,Chicken Pesto Crepe,"breakfast, dessert, lunch","Chicken, arugula, pesto, tomatoes, mozzarella, balsamic glaze",
+208,8,Chocolate Crepe,"breakfast, dessert, lunch",Chocolate Crepe,
+209,8,Croque Monsieur Crepe,"breakfast, dessert, lunch","Black forest ham, swiss, dijonaise",
+210,8,Egg Florentine,"breakfast, dessert, lunch","egg, swiss cheese, roasted red pepper, organic baby spinach",
+211,8,French Beef Sandwich,"lunch, dinner","beef, arugula, siwss cheese, caramelized onion, tomato",
+212,8,Egg n Cheese Croissant,"lunch, dinner",Egg n Cheese Croissant,
+213,8,Chicken Parmesan Sandwich,"lunch, dinner","Chicken, mozzarella, marinara, basil",
+214,8,Toscano Sandwich,"lunch, dinner","Mortadella salami, mozzarella cheese, tomato, basil, red wine vinegar",
+215,8,Crispy Chicken and Pimento Cheese Sandwich ,"lunch, dinner","Chicken tenders, pimento cheese, pickles, arugula, garlic",
+216,8,Egg bites,"breakfast, snack ","Egg bites with bacon, swiss and arugula",
+217,8,Egg & Cheese bagel,"breakfast, lunch",Egg  and cheese bagel,
+218,8,"Bacon, Egg, and Cheese Croissant","breakfast, lunch","Bacon, Egg, and Cheese Croissant",
+219,8,Chocolate Chip Scone,"breakfast, snack, dessert",Chocolate Chip Scone,
+220,8,Muffin,"breakfast, snack, dessert","Blueberry, chocolate chip, coffee cake, or pumpkin muffin",
+221,8,Crumb Cake,"breakfast, snack, dessert",Crumb Cake,
+222,8,Broccoli Quiche Slice,"breakfast, snack",Broccoli Quiche Slice,
+223,8,Pumpkin Sweet Bread,"breakfast, snack, dessert",Pumpkin Sweet Bread,
+224,8,Quiche Lorraine Slice,"breakfast, snack",Quiche Lorraine Slice,
+225,8,Blueberry Scone,"breakfast, snack, dessert",Blueberry Scone,
+226,8,Slice of Cake,"snack, dessert",Death by Chocolate or Tiramisu cake,
+227,8,Dessert Bar,"snack, dessert",Cheescake brownie or lemon bar,
+228,8,Cookie,"snack, dessert","Black & White, Chocolate Chip, Oatmeal Raisin, Shortdough Specialty",
+229,8,Cupcake,"snack, dessert","Chocolate, Cookies & Cream, Strawberry Lemonade, Vanilla",
+230,8,Sweet Bread,"snack, dessert",Sweet Bread,
+231,8,Gelato,"snack, dessert","Flavor Options: Cappucino, Chocolate, Dulce de Leche, Lemon, Mango, Mint Chocolate Chip, Mixed Berry, Salted Caramel, Vanilla",
+232,9,Falafel Pita Pocket,"lunch, dinner","Falafel, tahini, pita, lettuce, tomato, red onion",
+233,9,Yogurt Bar,breakfast,"Options of soy yogurt, strawberry soy yogurt, or vanilla soy yogurt",
+234,9,Oatmeal Bar,breakfast,oatmeal,
+235,9,Yogurt and Oatmeal Bar Topppings,breakfast,"Topping choices of brown sugar, dried apricot, dried cranberries, blueberries, cantaloupe, grapes, pineapple, strawberries, granola, oranges, peaches",
+236,9,Spicy Cauliflower Wrap,"lunch, dinner","spicy cauliflower, cucumber, pickled onion, lettuce, tomato, hot sauce, tahini","vegetarian, vegan"
+237,9,Falafel Wrap,"lunch, dinner","falafel, slad mix, tahini, tomato, banana pepper","vegetarian, vegan"
+238,9,Black Bean Burger,"lunch, dinner","Black Bean Burger, tomato, spicy mayo, hot texas bete, salad mix, pickles",vegetarian
+239,9,Avocado Toast,"breakfast, lunch","Avocado Toast with arugula, balsamic dressing, green onions, sliced tomatoes",
+240,9,3 Composed Salad,"lunch, dinner","pick 3: Kale salad, sweet potato, chick pea, grape leafs, hummus with pita, spicy hummus with pita, orzo, quinoa",
+241,9,Plant Based Chicken Nuggets,"lunch, dinner",Plant based chicken nuggets with bbq or honey mustard and choice of two sides,
+242,9,Chickpea Stew,"lunch, dinner","Chickpeas, zuchini, squash, carrots, onion, with choice of two sides",
+243,9,Sides,"lunch, dinner","Options of brown rice, white rice, cauliflower, brussel sprouts, chickpeas salad, cilantro hummus with pita, green beans, kale salad, mac and cheese, roasted vegetables, orzo salad, quinoa salad, roasted potato, hummus spicy with pita, stuffed grape leaves, roasted sweet potatoes, sweet potato, beet salad, cauliflower salad, grape leafs, mixed vegetables, spicy hummus with pita, sweet potato salad, potato au gratin",
+244,10,Non vegetarian combo,"lunch, dinner","served with 1 protein, 1 vegetable, 1 samosa, rice and naan",
+245,10,Protein Options,"lunch, dinner","Options of Beef Aloo, Chicken 65, Chicken Malabar, Chicken Tikka Masala, Fisk Pakoda, Meatball Manchurin",
+246,10,Vegetable Options,"lunch, dinner","Options of Beetroot Thoren, Cabbage Poriyal, Chana Masala, Egg Curry, Mix Vegetable, Paneer Mutter, Saag, Tofu Manchurian",
+247,10,Vegetarian Combo,"lunch, dinner","served with 3 vegetables, rice and naan",
+248,10,Specialty vegetarian combo,"lunch, dinner","served with 2 vegetables, 1 samosa, rice and naan",
+249,10,Non-vegetarian combo,"lunch, dinner","served with 2 protein 1 vegetable, rice and naan",
+250,10,Chicken Dosa,"lunch, dinner, snack",Savory crepe with Chicken Tikka,
+251,10,Masala Dosa,"lunch, dinner, snack",Savory crepe with masala,
+252,10,Vegetable Dosa,"lunch, dinner, snack",Savory crepe with mixed vegetables,
+253,10,Vegetable Samosa,"lunch, dinner, snack",Triangle pastries stuffed with savored peas and potatoes,
+254,10,Gulab Jamun,"snack, dessert","Fried balls of dough dipped in syrup, served warm",
+255,10,Mango Lassi,"snack, dessert",Yogurt-based drink with mango,
+256,11,Rotating  Menu,lunch,Menu changes monthly; offerings vary and are not fixed,
+257,12,Asiago Gnocchi,dinner,"tomato sauce, parmesan, gnocchi",
+258,12,Spinach and Artichoke Dip,dinner,Spinach and Artichoke Dip with crostini,
+259,12,Burrata,dinner,"heirloom cherry tomatoes , balsamic reduction, grilled bread",
+260,12,Calamari,dinner,flash fried - spicy marinara - caper remoulade,
+261,12,Shrimp Cocktail,dinner,cocktail sauce - lemon,
+262,12,Commons House Salad,dinner,mixed greens - cucumbers - tomatoes - balsamic vinaigrette,
+263,12,Classic Caesar,dinner,romaine - croutons - parmesan - Caesar dressing,
+264,12,Mussels and Fries,dinner,"Prince Edward Island mussels - white wine, butter, shallots, garlic
+grilled bread - house fries",
+265,12,Carolina Crab-Cakes,dinner,broccolini-lemon beurre blanc,
+266,12,Steak Frites,dinner,herb butter - house fries - petit green salad,
+267,12,Stuffed Airline Chicken Breast,dinner,"sundried tomato, goat cheese, spinach
+roasted garlic mashed potatoes - broccolini",
+268,12,Spinach and Ricotta Ravioli,dinner,spicy tomato broth - basil infused olive oil,
+269,12,Seared Atlantic Salmon,dinner,French lentils - lemon beurre blanc,
+270,12,Ribeye Steak,dinner,14 ounce - broccolini - garlic mashed potatoes - herb butter,
+271,12,Filet Mignon,dinner,8 ounces - broccolini - garlic mashed potatoes - red wine demi-glace,
+272,12,Mushroom Bourguignon,dinner,"mushrooms, tomatoes, carrots and leeks braised in red wine - polenta",
+273,12,Commons Steak Burger,dinner,"8 ounces house-ground filet and ribeye
+aged English cheddar - lettuce - tomato - house fries",
+274,13,Chicken Wings,"lunch, dinner","Wings with bbq suace, lemon pepper, duke reaper crazy hot sauce, ranch, sriracha soy glaze, plain, or buffalo sauce",
+275,13,Chicken Tenders,"lunch, dinner",Chicken tenders with fries and honey mustard sauce,
+276,13,Crispy Vegan Tenders,"lunch, dinner",Crispy Vgean Tenders with fries,"vegetarian, vegan"
+277,13,Sweet Potato Fries,"lunch, dinner, snack",Sweet Potato Fries,
+278,13,Nachos,"lunch, dinner","Nachos with queso, pico de gallo, pickled jalapenos, lettuce & side of sour cream",
+279,13,Kruggets and fries,"lunch, dinner",Chicken chunks with fries and choice of sauce,
+280,13,Mac and Cheese bites,"lunch, dinner",Mac and Cheese bites with choice of sauce,
+281,13,Fish & Fries,"lunch, dinner",Fish & Fries,
+282,13,Fried Cheese Curds,"lunch, dinner, snack",Fried Cheese Curds with a side of cajun remoulade,
+283,13,Fried Pickle Fries,"lunch, dinner, snack",Fried Pickle Fries with remoulade,
+284,13,Onion Rings,"lunch, dinner, snack",Onion Rings with remoulade,
+285,13,Pretzels with beer cheese and mustard,"lunch, dinner, snack",Pretzel with beer cheese and mustard,
+286,13,Ginger Grilled Salmon Salad,"lunch, dinner","Ginger Grilled Salmon Salad with avocado, red onion, carrot, cucmber, roasted corn & ginger dressing",
+287,13,Caribbean Fish Salad,"lunch, dinner","Caribbean Fish Salad with seasoned mahi mahi, romaine lettuce, fried plantains, pico de gallo, black beans, avocado, & cilantro citrus dressing",
+288,13,Fried Chicken Salad,"lunch, dinner","Fried Chicken Salad with black beans, tomato, red onion, carrot & honey mustard dressing",
+289,13,Mixed Arugula Salad,"lunch, dinner","Mixed Arugula Salad with fresh berries, red onion, carrot, cucumbers, strawberry vinaigrette dressing",
+290,13,Buffalo Bacon Ranch Bowl,"lunch, dinner","Diced chicken tenders tossed in buffalo sauce, fresh cut fries, chopped romaine, tomato, smoked bacon monterey jack cheese, and a side of ranch",
+291,13,Southwest Chicken Cobb Salad,"lunch, dinner","Southwest Chicken Cobb Salad with black beans, roasted corn, pico de gallo, avocado, shredded monterey jack cheese, fried egg & cilantro citrus dressing",
+292,13,Grilled Chicken and Goat Cheese Salad,"lunch, dinner","Grilled Chicken and Goat cheese salad with arugula, pickled onion, cucumber, carrot, and strawberry vinaigrette dressing",
+293,13,Buffalo Chicken Tender Sandwich,"lunch, dinner","Buffalo Chicken Tender Sandwich with cheddar cheese, lettuce, and house made chips",
+294,13,Flame Grilled Chicken Sandwich,"lunch, dinner","Flame Grilled Chicken Sandwich with Avocado, swiss, lettuce, tomato, and housemade chips",
+295,13,Flank Steak French Dip,"lunch, dinner",Flank Steak French Dip with provolone and fresh cut fries,
+296,13,Grilled Mahi Mahi Wrap,"lunch, dinner","Grilled Mahi Mahi Wrap with romaine lettuce, tomato, and sriracha remoulade, with fried plantains and house made chips on the side",
+297,13,Turkey and Havarti Sandwich,"lunch, dinner","Turkey and Havarti Sandwich with arugula, tomato, garlic aioli and house chips",
+298,13,DKH Quesadilla,"lunch, dinner","Chicken Quesadilla with monterey jack cheese, red peppers, onion, pico de gallo, and sour cream",
+299,13,BBQ Chicken Sandwich,"lunch, dinner","Grilled Chicken tossed in BBQ sauce with cheddar cheese, lettuce, tomato, and hosue made chips",
+300,13,Grilled Cheese,"lunch, dinner",Grilled Cheese,
+301,13,Ginger Salmon Wrap,"lunch, dinner","Ginger Salmon Wrap on a tomato tortilla with romaine ginger dressing, cucumbre, carrots, avocado",
+302,13,Steak Wrap,"lunch, dinner","Steak Wrap on a tomato tortilla with onions, mushrooms, red peppers, shredded cheese, and garlic aioli",
+303,13,Build Your own burger,"lunch, dinner",Build Your own burger,
+304,13,Brie and Bacon Jam burger,"lunch, dinner","Fresh Angus burger, brie, house made bacon ham, arugula, tomato, and fresh cut fries",
+305,13,Devils Krafthouse Burger,"lunch, dinner","Fresh Angus burger, sharp cheddar cheese, garlic aioli, romaine, tomato, pickles and fresh cut fries",
+306,13,Impossible Burger,"lunch, dinner","Impossible Burger with DIYA Cheese, Romaine, Tomato & Fresh Cut Fries",
+307,13,Mushroom and Swiss Burger,"lunch, dinner","Mushroom and Herb goat cheese burger with fresh angus burger, sauteed mushrooms, grilled onions, herb goat cheese, lettuce, tomato and fresh cut fries",
+308,13,Brecky Burger,"lunch, dinner","Angus burger with bacon, fried egg, american cheese and fresh cut fries",
+309,13,Queso Burger,"lunch, dinner","Angus burger with queso, jalapeno, lettuce and fresh cut fries",
+310,13,Dilly Burger,"lunch, dinner","Angus burger with dill pickles, ranch, mayo and fresh cut fries",
+311,13,Turkey Burger,"lunch, dinner","Turkey Burger with pepper jack cheese, lettuce, avocado, and pico de gallo",
+312,13,Chicken Wrap,"lunch, dinner","Chicken Tender wrap with lettuce, tomato, choice of ranch or honey mustard, and fries",
+313,13,Sundaes,dessert,"Flavor Options: Cappucino Chip, Oreo, Oreo Mint, Strawberry, Strawberry Chip, Triple Chocolate",
+314,13,Milkshake,dessert,"Flavor Options: Cappucino Chip, Oreo, Oreo Mint, Strawberry, Strawberry Chip, Triple Chocolate",
+315,13,"Bacon, Egg, and Cheese Bagel",breakfast,"Bacon, Egg, and Cheese Bagel",
+316,13,Breakfast Potato Bowl,breakfast,"Breakfast Potato Bowl with scrambled eggs, potatoes, bacon, monterey jack cheddar cheese, spinach",
+317,13,Breakfast Potatoes,breakfast,Breakfast Potatoes,
+318,13,Egg and Cheese Sandwich,breakfast,Egg and Cheese Sandwich,
+319,13,Southwest Wrap,breakfast,"Scrambled eggs, tortilla, black beans, monterrey jack cheddar cheese blend, pico de gallo, cilantro, red onion, lime juice, garlic",
+320,13,Turkey Sausage Egg Bagel,breakfast,Turkey Sausage Egg Bagel,
+321,13,Vegetable Goat Cheese Bowl,breakfast,"Scrambled eggs, potatoes, cheese crumble, mushroom, red onion, red pepper, spinach",
+322,13,Southwest Breakfast Bowl,breakfast,"breakfast potatoes, scrambled eggs, bacon, pico de gallo",
+323,14,Lamb Gyro,"lunch, dinner","Beef and lamb, pita, tzatziki, tomato, greens",
+324,14,Turkey Swiss Avocado,"lunch, dinner","Turkey, avocado, greens, tomatoes, peppercorn dressing",
+325,14,Chicken Shawarma,"lunch, dinner","Chicken, pickles, garlic aioli",
+326,14,Chicken Caesar Wrap,"lunch, dinner","chicken, romaine lettuce, caesar dressing, parmesan cheese",
+327,14,Brautwurst,"lunch, dinner","Brautwurst on a hoagie with sauerkraut, onions, peppers, and mustard",
+328,14,Salmon Burger,"lunch, dinner","Salmon patty, arugula, tomatoes, caramelized onions, horseradish aioli",
+329,14,Tangy Bourbon Chicken,"lunch, dinner", Tangy Bourbon Chicken with roasted sweet potatoes and green beans,
+330,14,Honey Garlic Chicken,"lunch, dinner",Honey Garlic Chicken with choice of two sides,
+331,14,Bourbon Garlic Chicken,"lunch, dinner",Bourbon Garlic Chicken with choice of two sides,
+332,14,Brautwurst,"lunch, dinner",Brautwurst with choice of two sides,
+333,14,Atlantic Salmon Filets,"lunch, dinner",Atlantic Salmon Filets with choice of two sides,
+334,14,Gyro,"lunch, dinner",Gyro with choice of two sides,
+335,14,Smoked Beef Brisket,"lunch, dinner",Smoked Beef Brisket with choice of two sides,
+336,14,Roasted Turkey,"lunch, dinner",Roasted Turkey with choice of two sides,
+337,14,Sides,"lunch, dinner","Options of brown rice, white rice, cauliflower, brussel sprouts, chickpeas salad, cilantro hummus with pita, green beans, kale salad, mac and cheese, roasted vegetables, orzo salad, quinoa salad, roasted potato, hummus spicy with pita, stuffed grape leaves, roasted sweet potatoes, sweet potato, beet salad, cauliflower salad, grape leafs, mixed vegetables, spicy hummus with pita, sweet potato salad, potato au gratin",
+338,15,Beef Brisket Sandwich Combo,"lunch, dinner",Beef Brisket Sandwich with side of succotash,
+339,15,Sauteed Catfish Combo,"lunch, dinner","Sauteed Catfish with diced potatoes, bacon colalrd greens and hushpuppies",
+340,15,Vegetarian Omelet Combo,breakfast,"mushrooms, peppers, onions, arugula, goat cheese and vegetatian sausage with a side of wheat toast and fruit",vegetarian
+341,15,Pulled Pork Sandwich,"lunch, dinner","NC style bbq, coleslaw, vinegar or sweet smoky bbq sauce",
+342,15,Shrimp Po Boy,"lunch, dinner","Fried shrimp dressed with lettuce, tomato, pickles and mayo",
+343,15,Big Country Fried Chicken Sandwich,"lunch, dinner","Fried chicken breast, mayo, and pickles. Choice of one side",
+344,15,BLT,"lunch, dinner","2 over easy eggs, bacon, lettuce, tomato, and mayo with choice of one side",
+345,15,Smoked Beef Brisket Sandwich,"lunch, dinner",Smoked for 12 hours southern style with sweet smoky sauce with one side,
+346,15,3 sides platter,"lunch, dinner",choice of 3 sides,
+347,15,Fried Chicken Tenders,"lunch, dinner","Fried Chicken southern style with choice of two sides, sauce and choice of biscuit or hush puppies",
+348,15,Traditional NC style BBQ,"lunch, dinner", Traditional NC style BBQ with choice of 2 sides and hush puppies,
+349,15,Homestyle Meatloaf,"lunch, dinner",Homestyle Meatloaf with choice of 2 sides and hush puppies,
+350,15,Pulled Pork and Tenders,"lunch, dinner",Pulled boston butt with choice of 2 sides and hush puppies,
+351,15,Catfish Platter,"lunch, dinner","Choice of blackened, sauteed, or  breaded. Served with remoulade. Comes with choice of 2 sides. Serve with tarter sauce",
+352,15,Smoked Beef Brisket,"lunch, dinner",Smoked for 12 hours southern style with sweet smoky sauce with choice of 2 sides and 2 hushpuppies,
+353,15,Fried Chicken,"lunch, dinner",2 or 3 pieces with choice of 2 sides and choice of biscuit or hushpuppies,
+354,15,Shrimp and Grits,"lunch, dinner","Grits topped with bacons, onions, tomato and mushrooms",
+355,15,Sides,"lunch, dinner","Options ofbanana, orange, apple, fruit salad, bacon collard greens, country green beans, mashed potatoes, pinto beans, succotash, vanilla greek yogurt, watermelon salad, griddled squash and onions, cole slaw, mixed fruit, seasoned diced potato, mac and cheese, sourdough or wheat toast, brioche roll, biscuit plain, 2 eggs any style",
+356,15,French Toast,breakfast,"3 slices of sourdouch bread, powdered sugar, berries, maple syrup, and one side",
+357,15,Fast lane Blue Plate Eggs Your Way,breakfast,Two Eggs your way with two sides and biscuit or toast,
+358,15,Build Your Own Omelet,breakfast,Build Your Own Omelet with one side and choice of toast,
+359,15,Biscuits and Gravy,breakfast,"Two biscuits, thyme, sausage and gravy with one side",
+360,15,Chicken and Waffles,breakfast,Served with honey drizzle and a breakfast side,
+361,15,Pancake Breakfast,breakfast,Served with 2 scrambled eggs and choice of ham/sausage/bacn/vegetable sausage/turkey sausage,
+362,15,Biscuit,breakfast,"Options include plain, with egg and cheese, with protein, with egg cheese and protein",
+363,15,Apple Cobbler,dessert,Apple Cobbler,
+364,15,Banana Pudding,dessert,Banana Pudding,
+365,16,Cheese Pizza,"lunch, dinner",Cheese Pizza,
+366,16,Meat Pizza,"lunch, dinner",Choice of buffalo chicken or pepperoni,
+367,16,Stinger Pizza,"lunch, dinner","Pepperoni, Bacon, Jalapenos, grated romano, mozzarella, hot honey, and red sauce base",
+368,16,Chicken Pesto Pizza,"lunch, dinner","Chicken, roasted red peppers, red onion, ricotta, basil pesto",
+369,16,Breadstick,"lunch, dinner",Breadstick,
+370,16,Buffalo Chicken Pizza,"lunch, dinner","Buffa lChicken, mild wing sauce, mozzarella, ranch",
+371,16,Harvest Pizza,"lunch, dinner","Bruschetta, tomatoes, mushrooms, red onions, sweet peppers, fresh basil, mozzarella, red sauce",
+372,16,Kyles Pizza,"lunch, dinner","Chicken, bacon, bbq sauce, mozzarella, and ranch",
+373,16,Margherita Pizza,"lunch, dinner","Mozzarella, basil, romano, red sauce",
+374,16,Pjs New Yorker Pizza,"lunch, dinner","Pepperoni, sausage, mushrooms, red onions, sweet peppers, mozzarella, and red sauce",
+375,16,Rustic Pizza,"lunch, dinner","Pepperoni, sausage, caramelized onion, red peppers, fresh pasil, mozzarella, red sauce",
+376,16,Vegan Pizza,"lunch, dinner","Neapolitan sauce, vegan cheese","vegetarian, vegan"
+377,16,Heritage Honey Pizza,"lunch, dinner","Pepperoni, sausage, ricotta, mozzarella, hot honey, fresh basil, romano, red sauce",
+378,16,Blaise Pizza,"lunch, dinner","Sausage, bacon, mushrooms, caramelized onion, spinach, ricotta, hot honey, mozzarella",
+379,16,Bruschetta Pizza,"lunch, dinner","fior di latte mozzarella, bruschetta, tomatoes, arugula, romano, balsamic glaze, basil, pesto base",vegetarian
+380,16,Quattro Pizza,"lunch, dinner","sausage, meatballs, pepperoni, bacon, red sauce",
+381,16,Blackened Shrimp Scampi,"lunch, dinner","blackened shrimp, lemon garlic olive oil, spaghetti, roasted red peppers, fresh basil, romano",
+382,16,Veggie Pasta,"lunch, dinner","Choice of sauce (alfredo, arrabiata, parma rosa, pesto basil pomodoro) and Veggies (baby spinach, mushrooms, roasted red peppers, roasted tomatoes, sauteed onions, sweet peppers)",
+383,16,Pasta and Sauce Only,"lunch, dinner","Choice of sauce (alfredo, arrabiata, parma rosa, pesto basil pomodoro)",
+384,16,Custom Pasta,"lunch, dinner",Custom Pasta,
+385,16,Chicken Alfredo pasta,"lunch, dinner","Grilled chicken, parmesan alfredo sauce, fettucinni, spinach, mushrooms, romano",
+386,16,Garden Pesto pasta,"lunch, dinner","pesto, fettucine, spinach, tomatoes, mushrooms, red peppers, basil, romano",
+387,16,Salmon Alfredo Pasta,"lunch, dinner","Baked salmon, parmesan alfredo, fettucini, spinach, lemon, romano",
+388,16,Meatballs & Spaghetti,"lunch, dinner","Meatball, pomodoro sauce, spaghetti, romano",
+389,16,Braised Beef Pasta,"lunch, dinner","Braised beef, casarecce, alfredo sauce, tomtoes, romano",
+390,16,Chicken Basil Pesto Pasta,"lunch, dinner","Grilled Chicken, basil pesto sauce, roasted grape tomatoes, casarecce pasta, red peppers, romano",
+391,16,Parma Rosa Pasta,"lunch, dinner","Grilled Chicken, Parma Rosa Sauce, Spinach, Peppers and Onions, Fettucinin, Romano",
+392,16,Spicy Il Forno,"lunch, dinner","Fennel Sausage, Spicy Arrabbiata Sauce, Peppers and Onions, Rigatoni, Green Onions, Roasted Tomatoes, Romano",
+393,16,Iced Brownie,dessert,Iced Brownie,
+394,16,Chocolate Chip Cookie,dessert,Chocolate Chip Cookie,
