@@ -1,29 +1,51 @@
 # Attribution
 
-## AI Tools Used
+## AI Tools Used in Development
 
-### Claude (Anthropic)
-Used throughout the project for code generation, debugging, and architecture guidance. Specifically:
-- Generated initial versions of `app.py`, `retag_menu.py`, and all three notebooks
-- Helped debug PyTorch/dependency issues and Gradio message format errors
-- Suggested project structure and rubric strategy
-- All generated code was reviewed, modified, and integrated by me — several functions were substantially reworked (e.g. the retag batching logic was rewritten after parse errors, the evaluate notebook was rewritten to be self-contained after imports failed)
+### Claude (Anthropic - Sonnet 4.6)
+Claude was used throughout this project for code generation, architecture guidance, and debugging. 
 
-### Groq / Llama 3.3 70B
-- Used as the LLM backbone for the chatbot (inference via API)
-- Used via `retag_menu.py` to auto-generate tags for 394 menu items using a manually designed tag vocabulary
+The files that utilized AI generation are as follows:
+- Initial scaffolding for `src/preprocessing.py`, `src/embeddings.py`, `src/retrieval.py`, `src/chatbot.py`, and `src/config.py`
+- Initial versions of `notebooks/01_data_prep.ipynb` and `notebooks/evaluate.ipynb`
+- Initial `app.py` Gradio UI structure
+- `scripts/retag_menu.py` batch tagging logic
 
-### Llama 3.1 8B Instant (Groq)
-- Used in early versions of `retag_menu.py` before switching to 3.3 70B for better structured output reliability
+#### Modified and Reworked
+- **`retag_menu.py`** The original Claude-generated version used batch processing which caused repeated parse errors and had to be changed to row-by-row tagging.
 
-## Data
-- Menu item names and descriptions manually collected from the Duke NetNutrition portal (netnutrition.cbord.com/nn-prod/Duke)
-- Location data manually collected from Duke Dining website
-- Tags generated using Llama 3.3 70B with a manually designed vocabulary — see `scripts/retag_menu.py`
+- **`app.py`** required lots of debugging due to Gradio version incompatibilities.
 
-## Libraries
-- `sentence-transformers` — embedding model (all-MiniLM-L6-v2)
-- `groq` — Groq Python SDK
-- `gradio` — web UI
-- `scikit-learn` — cosine similarity
-- `pandas`, `numpy` — data processing
+- **`notebooks/evaluate.ipynb`** modified as more evaluation ideas were generated
+
+- **`src/retrieval.py`** added in more logic (ex. reranking) to improve retrieval.
+
+- **`src/preprocessing.py`** later integrated chunking but was not heavily used due to poor performance
+
+---
+
+### Groq API / Llama Models
+- **Llama 3.3 70B Versatile** — used in `scripts/retag_menu.py` to generate semantic tags for menu items using a manually designed tag vocabulary. Also used in `notebooks/evaluate.ipynb` for prompt engineering comparison and evaluation.
+- **Llama 3.1 8B Instant** — used as the production LLM in `src/chatbot.py` and `app.py` for real-time dining recommendations.
+
+---
+
+### Data
+- Menu item names, descriptions, and meal periods were manually collected from the Duke NetNutrition portal (netnutrition.cbord.com/nn-prod/Duke)
+- Location data (names, hours, cuisine types, campus location) was manually collected from the Duke Dining website
+- Semantic tags were generated using Llama 3.3 70B with a manually designed tag vocabulary — see `scripts/retag_menu.py`
+- All data collection, cleaning, and curation was done by me
+
+---
+
+### Libraries
+| Library | Use |
+|---|---|
+| `sentence-transformers` | Embedding model (all-MiniLM-L6-v2) |
+| `groq` | Groq Python SDK for LLM inference |
+| `gradio` | Web UI for app.py |
+| `scikit-learn` | Cosine similarity for retrieval |
+| `pandas` | Data loading and preprocessing |
+| `numpy` | Embedding matrix operations |
+| `matplotlib` | Evaluation visualizations |
+| `python-dotenv` | API key management |
